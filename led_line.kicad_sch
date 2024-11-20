@@ -1,0 +1,678 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ac5cc092-0b03-4839-ade3-b8dead5e658e")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 35.56 118.11)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "16159897-ee57-4e5e-a778-8009c35d9955")
+		(property "Sheetname" "led_segment6"
+			(at 35.56 117.3984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dd7cf082-0ed4-4708-b2be-b173411dacbb")
+		)
+		(pin "Red" input
+			(at 48.26 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1152c736-b823-4af6-81f0-50cd37973a3a")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 55.88)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2aea89c5-8fb5-4e40-aeec-207246f544aa")
+		(property "Sheetname" "led_segment2"
+			(at 35.56 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5c876811-194c-4463-8f65-9df0939544ec")
+		)
+		(pin "Red" input
+			(at 48.26 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "593ce0d0-a7d8-409c-ba16-c51a841e7e98")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 165.1)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3b8fc604-ae2f-40df-91f0-ac5b9f5315e4")
+		(property "Sheetname" "led_segment9"
+			(at 35.56 164.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 174.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "487249ea-e53b-4bc3-8b5b-6782f2a2aafc")
+		)
+		(pin "Red" input
+			(at 48.26 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fa933547-2d24-4c17-87a4-75f76a43b9c5")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 71.12)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "487ebdd4-65ac-4f90-8285-3a8891794cfd")
+		(property "Sheetname" "led_segment3"
+			(at 35.56 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5310c1c3-f376-4ea9-a5a4-af7f0b3d1cb0")
+		)
+		(pin "Red" input
+			(at 48.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9ab5eeb7-e3f1-4cf3-8aa3-eced53cb8847")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 149.86)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "749b3ef9-abfd-42e3-afb0-681495caca56")
+		(property "Sheetname" "led_segment8"
+			(at 35.56 149.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "52a88722-2387-45e6-a434-fc78c5dd1936")
+		)
+		(pin "Red" input
+			(at 48.26 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "eef62a3d-485b-47e7-828d-47f031361072")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 87.63)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "948e1c68-c9bc-4743-a51c-3f2a217379f8")
+		(property "Sheetname" "led_segment4"
+			(at 35.56 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "215aa513-a386-45b7-8691-60112a955ff7")
+		)
+		(pin "Red" input
+			(at 48.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0896c44f-3219-4bab-a38d-0889d01aed6a")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 133.35)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "96d43307-f20c-4790-9729-262a3b9aadee")
+		(property "Sheetname" "led_segment7"
+			(at 35.56 132.6384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f120a44f-efc0-41a8-8288-985e1dbce8b8")
+		)
+		(pin "Red" input
+			(at 48.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b50059b7-306d-44c5-ad1b-aacce0afccdc")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 102.87)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a2b397c6-09d6-4f2e-b561-91cf6b96f742")
+		(property "Sheetname" "led_segment5"
+			(at 35.56 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6a9fb119-eb1f-4142-8ec9-a870f6ba8849")
+		)
+		(pin "Red" input
+			(at 48.26 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9034958c-6eda-4bda-a5fb-9a62ac44bbc6")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 40.64)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ba573553-1f3d-4ecb-a52d-fb2013a351af")
+		(property "Sheetname" "led_segment1"
+			(at 35.56 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8ccd8619-5f2a-4f8a-a530-5379b55ed943")
+		)
+		(pin "Red" input
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ebb589f1-cf6c-49bf-bf94-8fe8161188a7")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 25.4)
+		(size 12.7 8.89)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d27fdcfd-6194-4fcc-b7c6-87e0d671cd1b")
+		(property "Sheetname" "led_segment0"
+			(at 35.56 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_segment.kicad_sch"
+			(at 35.56 34.8746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Pole2" ""
+			(at 35.56 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "Green" input
+			(at 48.26 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "002c761c-df61-41dd-8ccc-6888999fd3b8")
+		)
+		(pin "Red" input
+			(at 48.26 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c01ea4bb-541e-4a73-80e3-cb36c92a1d82")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/a867083c-2147-48a9-aee5-f2d6e310d44f"
+					(page "3")
+				)
+			)
+		)
+	)
+)
