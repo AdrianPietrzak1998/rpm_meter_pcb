@@ -665,43 +665,43 @@
       "alert_yellow"
     ],
     [
-      "f5e842f0-e440-4d64-b668-295c500aef0a",
+      "3bc46276-496b-44de-b8fa-2ede9a68357b",
       "led_segment0"
     ],
     [
-      "366a2947-f4f3-4ddf-b34c-55abb3ed99d4",
+      "4fee7e7a-8591-4660-872d-5b49e47a87e6",
       "led_segment1"
     ],
     [
-      "a7c54579-dc1b-41e7-8870-25bbb34f7e7d",
+      "ea98e233-9813-4787-9409-aa1856e85a2f",
       "led_segment2"
     ],
     [
-      "676ebd75-d868-4d94-8147-ffe75956f5fb",
+      "0e135a60-d0b1-4349-b3ea-7e4ba0ab8650",
       "led_segment3"
     ],
     [
-      "8e2121eb-9d49-4797-a4f2-c552047b9967",
+      "48760cfd-f5aa-4119-ab14-b81220234cc4",
       "led_segment4"
     ],
     [
-      "74580023-4bc3-4c02-b275-fe3eff3c0b8f",
+      "10732704-4bee-46f9-9ab6-4352296a40cd",
       "led_segment5"
     ],
     [
-      "300dcd06-e097-4abd-988b-82102242f515",
+      "5c11b842-e333-4cb2-bda5-775b737445fc",
       "led_segment6"
     ],
     [
-      "c6fbf9f4-8cb3-4e73-8765-ee30ee96526a",
+      "85035ec9-6d2c-4656-b26f-0858b2f3c001",
       "led_segment7"
     ],
     [
-      "4d89810f-ffdc-42bc-bb0f-2a44ce177a4b",
+      "7649156b-ea40-416c-b1e4-f7969fd28b43",
       "led_segment8"
     ],
     [
-      "c255ec72-821c-451d-922d-24615b951e21",
+      "c4b46dae-b046-48dd-b66a-01048bfc2951",
       "led_segment9"
     ],
     [
@@ -723,6 +723,50 @@
     [
       "2563f2c8-d1f9-4991-97e7-c11b72eb6ec3",
       "alert_red"
+    ],
+    [
+      "85f254e6-91f1-4f46-abfd-9bd2ee2583c5",
+      "led_segment10"
+    ],
+    [
+      "45a986c6-70d0-42c7-9293-21dd4ecec7b9",
+      "Leds"
+    ],
+    [
+      "7a966a3d-a626-455e-9f9a-a0a6962d67ef",
+      "led_segment11"
+    ],
+    [
+      "23a0a27d-2094-499a-b878-185efa7fbf47",
+      "led_segment12"
+    ],
+    [
+      "24d0e9cb-a156-4fab-bddb-6cd9b63503e3",
+      "led_segment13"
+    ],
+    [
+      "0116f9d9-0975-4e37-90e6-9686a55eb4cd",
+      "led_segment14"
+    ],
+    [
+      "3971fe74-fe98-4687-9500-279b8e726690",
+      "led_segment15"
+    ],
+    [
+      "81d8d650-3b36-43a2-a42f-cb111aa8dba3",
+      "led_segment16"
+    ],
+    [
+      "cc8dc8fe-765f-481e-8d04-358f5461075f",
+      "led_segment17"
+    ],
+    [
+      "a0a7608c-55c9-455f-a207-32f11ab50629",
+      "led_segment18"
+    ],
+    [
+      "b5d9c69d-ccb1-4c2c-8233-d93ea3f2b8e5",
+      "led_segment19"
     ]
   ],
   "text_variables": {}

@@ -3201,18 +3201,6 @@
 		)
 		(uuid "d46859cd-1fdf-4c34-ae97-896b6f5a2dd4")
 	)
-	(hierarchical_label "red_led_9"
-		(shape input)
-		(at 245.11 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "07397178-126a-4d6e-889a-283df159ab43")
-	)
 	(hierarchical_label "r_alert_signal"
 		(shape input)
 		(at 153.67 55.88 0)
@@ -3224,90 +3212,6 @@
 			(justify left)
 		)
 		(uuid "0a460a71-fb45-4f54-bcfc-e7b2d676014b")
-	)
-	(hierarchical_label "green_led_1"
-		(shape input)
-		(at 245.11 29.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0d4bcd4e-ce96-428a-9649-2c9fe6935159")
-	)
-	(hierarchical_label "green_led_3"
-		(shape input)
-		(at 245.11 34.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1563e1c5-45ef-4cca-9e96-e66fb4826681")
-	)
-	(hierarchical_label "green_led_4"
-		(shape input)
-		(at 245.11 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "185389b7-bf7b-42f8-b54e-034446446d1b")
-	)
-	(hierarchical_label "red_led_6"
-		(shape input)
-		(at 245.11 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "222d0d07-12a4-4ae9-9fc1-27d19b74bfcd")
-	)
-	(hierarchical_label "red_led_3"
-		(shape input)
-		(at 245.11 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2c687f5b-d33f-41f1-8e25-6b1f2b0e9b84")
-	)
-	(hierarchical_label "red_led_4"
-		(shape input)
-		(at 245.11 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2f9b942a-d543-4dfa-aecb-e01f54a11ea9")
-	)
-	(hierarchical_label "green_led_6"
-		(shape input)
-		(at 245.11 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "34ca6a42-2708-4d6e-939b-17cfb12bfc01")
 	)
 	(hierarchical_label "y_alert_signal"
 		(shape input)
@@ -3321,42 +3225,6 @@
 		)
 		(uuid "3d5d4584-e1ec-4c58-be02-305e9f430d47")
 	)
-	(hierarchical_label "red_led_2"
-		(shape input)
-		(at 245.11 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "467b5617-3b8b-426c-935e-6e335c3f4969")
-	)
-	(hierarchical_label "red_led_0"
-		(shape input)
-		(at 245.11 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4efd027b-3794-4bea-a913-1a419663ddee")
-	)
-	(hierarchical_label "red_led_7"
-		(shape input)
-		(at 245.11 73.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5de23516-33cc-4a46-8001-212795a0805f")
-	)
 	(hierarchical_label "led_pwm_out_3v3"
 		(shape input)
 		(at 153.67 48.26 0)
@@ -3369,54 +3237,6 @@
 		)
 		(uuid "63cbbcdf-dcae-4b56-a141-a05a91ee1f3d")
 	)
-	(hierarchical_label "green_led_8"
-		(shape input)
-		(at 245.11 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "641e50f9-9f02-4e56-b05d-9a6cf0f4180a")
-	)
-	(hierarchical_label "green_led_7"
-		(shape input)
-		(at 245.11 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "73b43f70-39a3-44af-9275-e89590605098")
-	)
-	(hierarchical_label "green_led_0"
-		(shape input)
-		(at 245.11 26.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "826a4b4a-36c2-453f-b0bc-0a4e3b3f6092")
-	)
-	(hierarchical_label "green_led_5"
-		(shape input)
-		(at 245.11 39.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8b2fe7e9-ab0d-485c-96d6-2453651d75ee")
-	)
 	(hierarchical_label "light_signal"
 		(shape input)
 		(at 153.67 45.72 0)
@@ -3428,66 +3248,6 @@
 			(justify left)
 		)
 		(uuid "8fe190e0-dd39-4d39-ab13-4e60e07e2f30")
-	)
-	(hierarchical_label "red_led_8"
-		(shape input)
-		(at 245.11 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9e957c7f-d5fb-4d62-bcb8-6ff1603644ba")
-	)
-	(hierarchical_label "red_led_1"
-		(shape input)
-		(at 245.11 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5d69a4a-9e96-4d67-a385-42b33db1b69c")
-	)
-	(hierarchical_label "red_led_5"
-		(shape input)
-		(at 245.11 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cf9c3a64-a47c-4e83-928c-d902a4d23037")
-	)
-	(hierarchical_label "green_led_9"
-		(shape input)
-		(at 245.11 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d3c20d6e-54fe-48b1-b3bb-61a1dd43a83b")
-	)
-	(hierarchical_label "green_led_2"
-		(shape input)
-		(at 245.11 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f16fd732-d691-4f64-b931-15a5c5aa9215")
 	)
 	(hierarchical_label "rpm_signal_mcu"
 		(shape input)
