@@ -767,6 +767,10 @@
     [
       "b5d9c69d-ccb1-4c2c-8233-d93ea3f2b8e5",
       "led_segment19"
+    ],
+    [
+      "52494463-9471-4829-8fdd-a1729c6b7a2b",
+      "step_down"
     ]
   ],
   "text_variables": {}
