@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "ff64e23c-38d9-4a60-bb0c-a48ea13d154b")
 	(paper "A5")
+	(title_block
+		(title "RPM meter LED")
+		(date "2024-11-26")
+		(rev "v1.0")
+		(company "STAPsystem")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers hide)
