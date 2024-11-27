@@ -563,6 +563,163 @@
 				)
 			)
 		)
+		(symbol "Diode:SMAJ17CA"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMAJ17CA"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "400W bidirectional Transient Voltage Suppressor, 17.0Vr, SMA(DO-214AC)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "bidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMAJ17CA_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMAJ17CA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:TLV1117-33"
 			(pin_names
 				(offset 0.254)
@@ -1405,6 +1562,12 @@
 		(uuid "102b77d6-6596-4d33-9509-d424d8f4526e")
 	)
 	(junction
+		(at 71.12 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1033c73e-dc62-4096-8d91-6a2c42f338c9")
+	)
+	(junction
 		(at 149.86 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1499,6 +1662,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb74f73b-23a8-4fe3-8a1b-4b29220d22a6")
+	)
+	(wire
+		(pts
+			(xy 71.12 66.04) (xy 71.12 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0773a23d-9e96-4027-b2d4-fb9845c6b604")
 	)
 	(wire
 		(pts
@@ -1752,7 +1925,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 58.42) (xy 81.28 58.42)
+			(xy 67.31 58.42) (xy 71.12 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1862,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 74.93) (xy 81.28 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bae2dbe0-754b-4e9c-907c-2541e224d83f")
+	)
+	(wire
+		(pts
 			(xy 129.54 102.87) (xy 129.54 104.14)
 		)
 		(stroke
@@ -1919,6 +2102,16 @@
 			(type default)
 		)
 		(uuid "cfabd5e8-71d0-4638-9c80-e0ecb2025966")
+	)
+	(wire
+		(pts
+			(xy 71.12 58.42) (xy 81.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0baee88-f37e-4563-94aa-4fcf2091aa49")
 	)
 	(wire
 		(pts
@@ -1990,9 +2183,9 @@
 		)
 		(uuid "fab856c2-e70f-4264-b678-b0ea8b05797d")
 	)
-	(text "Do sprawdzenia zawartość magazynu"
+	(text "Do sprawdzenia co mam"
 		(exclude_from_sim no)
-		(at 178.816 108.458 0)
+		(at 165.354 112.776 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2272,6 +2465,76 @@
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/52494463-9471-4829-8fdd-a1729c6b7a2b"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SMAJ17CA")
+		(at 71.12 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c515c4d-11da-4f3a-9a16-3fec3a2f23a0")
+		(property "Reference" "D2"
+			(at 73.66 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMAJ17CA"
+			(at 73.66 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 76.2 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 71.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "400W bidirectional Transient Voltage Suppressor, 17.0Vr, SMA(DO-214AC)"
+			(at 71.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c62f8e27-e95c-4052-8cd5-1351cbcf6343")
+		)
+		(pin "2"
+			(uuid "e2702021-a857-4a71-9c29-63d104f2482d")
+		)
+		(instances
+			(project ""
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/52494463-9471-4829-8fdd-a1729c6b7a2b"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3588,7 +3851,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 78.74 58.42 90)
+		(at 67.31 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3597,7 +3860,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6655c26-5b83-42a3-a5a8-f96c8ee53421")
 		(property "Reference" "#PWR0112"
-			(at 82.55 58.42 0)
+			(at 71.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +3869,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 74.93 58.4199 90)
+			(at 63.5 58.4199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,7 +3878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 58.42 0)
+			(at 67.31 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3624,7 +3887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 58.42 0)
+			(at 67.31 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3633,7 +3896,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 58.42 0)
+			(at 67.31 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
