@@ -1,0 +1,16 @@
+.SN74LV1T34DCKR :1 ;Single Power Supply BUFFER Logic Level Shifter (no enable)
+SOT65P210X110-5N
+*STM IC
+*NGS
+*PLB 1="N.C" 2="A" 3="GND" 4="Y" 5="VCC"
+*MXP 5
+*DFN SN74LV1T34DCKR
+~!Mouser Part Number (595-SN74LV1T34DCKR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DCKR?qs=8sOby8ZxZLGjFfifrzzjkQ%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (SN74LV1T34DCKR)
+~!Link Datasheet (http://www.ti.com/lit/gpn/sn74lv1t34)
+~!Height (1.1mm)
+~!3D_Model (SN74LV1T34DCKR)
+SN74LV1T34DCKR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

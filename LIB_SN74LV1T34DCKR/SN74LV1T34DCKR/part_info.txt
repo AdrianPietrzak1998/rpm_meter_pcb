@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=SN74LV1T34DCKR
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=1.1
+Released=2018-01-11 10:08:31
+Downloaded=2024-11-27 17:15:32
+3D=Y

@@ -11,32 +11,52 @@
 		(company "STAPsystem")
 	)
 	(lib_symbols
-		(symbol "Device:C_Small"
-			(pin_numbers hide)
+		(symbol "LED:WS2812B"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right bottom)
 				)
 			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
 				(at 0 0 0)
 				(effects
 					(font
@@ -45,7 +65,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor, small symbol"
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,31 +83,23 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Small_0_1"
+			(symbol "WS2812B_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -96,282 +108,79 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "C_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-			)
-		)
-		(symbol "local_library:STPIC6D595TTR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 31.75 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
 					)
-					(justify left top)
-				)
-			)
-			(property "Value" "STPIC6D595TTR"
-				(at 31.75 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "Library_local:SOP65P640X120-16N"
-				(at 31.75 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type none)
 					)
-					(justify left top)
-					(hide yes)
 				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-				(at 31.75 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
 					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Counter Shift Registers Power logic 8-BIT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.2"
-				(at 31.75 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type none)
 					)
-					(justify left top)
-					(hide yes)
 				)
-			)
-			(property "Mouser Part Number" "511-STPIC6D595TTR"
-				(at 31.75 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-				(at 31.75 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "STMicroelectronics"
-				(at 31.75 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-				(at 31.75 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "STPIC6D595TTR_1_1"
 				(rectangle
-					(start 5.08 2.54)
-					(end 30.48 -20.32)
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -380,10 +189,12 @@
 						(type background)
 					)
 				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "VCC"
+			)
+			(symbol "WS2812B_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -398,35 +209,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 35.56 -15.24 180)
-					(length 5.08)
-					(name "RCK"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 35.56 -12.7 180)
-					(length 5.08)
-					(name "DRAIN4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -434,35 +227,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 35.56 -10.16 180)
-					(length 5.08)
-					(name "DRAIN5"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 35.56 -7.62 180)
-					(length 5.08)
-					(name "DRAIN6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -470,35 +245,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 35.56 -5.08 180)
-					(length 5.08)
-					(name "DRAIN7"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 35.56 -2.54 180)
-					(length 5.08)
-					(name "SRCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -506,17 +263,132 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 35.56 0 180)
+			)
+		)
+		(symbol "local_library:SN74LV1T34DCKR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 21.59 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "SN74LV1T34DCKR"
+				(at 21.59 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOT65P210X110-5N"
+				(at 21.59 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74lv1t34"
+				(at 21.59 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Power Supply BUFFER Logic Level Shifter (no enable)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.1"
+				(at 21.59 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "595-SN74LV1T34DCKR"
+				(at 21.59 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DCKR?qs=8sOby8ZxZLGjFfifrzzjkQ%3D%3D"
+				(at 21.59 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Texas Instruments"
+				(at 21.59 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SN74LV1T34DCKR"
+				(at 21.59 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "SN74LV1T34DCKR_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 20.32 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin no_connect line
+					(at 0 0 0)
 					(length 5.08)
-					(name "GND"
+					(name "N.C"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "16"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -527,7 +399,7 @@
 				(pin passive line
 					(at 0 -2.54 0)
 					(length 5.08)
-					(name "SER_IN"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -545,7 +417,7 @@
 				(pin passive line
 					(at 0 -5.08 0)
 					(length 5.08)
-					(name "DRAIN0"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -561,9 +433,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 0)
+					(at 25.4 0 180)
 					(length 5.08)
-					(name "DRAIN1"
+					(name "Y"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -579,9 +451,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -10.16 0)
+					(at 25.4 -2.54 180)
 					(length 5.08)
-					(name "DRAIN2"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -589,78 +461,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "DRAIN3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "~{CLR}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "~{G}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 35.56 -17.78 180)
-					(length 5.08)
-					(name "SER_OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -889,1669 +689,67 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 91.44) (xy 205.74 91.44)
+			(xy 86.36 130.81) (xy 53.34 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07143728-8493-46d8-8b01-bf1e87e34367")
+		(uuid "0edbd88b-6d66-4303-bb48-978f43a01bfc")
 	)
 	(wire
 		(pts
-			(xy 161.29 93.98) (xy 161.29 78.74)
+			(xy 86.36 146.05) (xy 86.36 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08c66e76-3c43-4310-9c83-4758b628c4ba")
+		(uuid "6d14e782-5225-4a5e-ac7a-079e25b4da73")
 	)
 	(wire
 		(pts
-			(xy 205.74 93.98) (xy 217.17 93.98)
+			(xy 53.34 130.81) (xy 53.34 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "091e6564-3ed3-4c50-9003-4ceae5b81b6f")
+		(uuid "b67fd29b-d65d-4849-b934-c18c36614a01")
 	)
 	(wire
 		(pts
-			(xy 326.39 83.82) (xy 318.77 83.82)
+			(xy 53.34 107.95) (xy 64.77 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "094d99e9-cd4e-45c2-baeb-58c187deada3")
+		(uuid "e2a720a9-85c9-465b-b7bc-b997de79a92c")
 	)
-	(wire
-		(pts
-			(xy 101.6 78.74) (xy 114.3 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c6c85dc-640b-46b7-a52c-d64e1041d600")
-	)
-	(wire
-		(pts
-			(xy 35.56 81.28) (xy 24.13 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cda2d07-f333-4331-9f2e-e5b437edd18c")
-	)
-	(wire
-		(pts
-			(xy 270.51 78.74) (xy 261.62 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "164da5c5-b277-4508-8087-ee943fc391db")
-	)
-	(wire
-		(pts
-			(xy 156.21 86.36) (xy 149.86 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18c7b795-c585-4310-899e-18307f8ad104")
-	)
-	(wire
-		(pts
-			(xy 107.95 88.9) (xy 114.3 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fdde2ae-f1d9-4579-896b-0f0496df6a58")
-	)
-	(wire
-		(pts
-			(xy 44.45 86.36) (xy 50.8 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25dc0eb8-6167-45d9-baf8-5feb20b73d95")
-	)
-	(wire
-		(pts
-			(xy 158.75 78.74) (xy 149.86 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25ed5c18-33b5-4b8a-944e-a11315cd0368")
-	)
-	(wire
-		(pts
-			(xy 274.32 93.98) (xy 274.32 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b9e1d63-2282-4c1f-adc2-2cf3092f1399")
-	)
-	(wire
-		(pts
-			(xy 219.71 83.82) (xy 226.06 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2eea812c-7ef0-4f4c-a34f-56785b6cefac")
-	)
-	(wire
-		(pts
-			(xy 326.39 88.9) (xy 318.77 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f4ad5d6-c180-4cd7-91bd-aef8a5b8d3ec")
-	)
-	(wire
-		(pts
-			(xy 214.63 78.74) (xy 205.74 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3891cdbb-f262-4c6d-bf76-c18f3b59b8dd")
-	)
-	(wire
-		(pts
-			(xy 35.56 83.82) (xy 24.13 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41abcc86-2dd4-4294-a73b-4a84e711eacc")
-	)
-	(wire
-		(pts
-			(xy 93.98 81.28) (xy 86.36 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41f71ac3-d0d3-40bb-b8c9-1a2e3ca60075")
-	)
-	(wire
-		(pts
-			(xy 163.83 81.28) (xy 170.18 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a913859-6f3e-42fd-950e-88ccb534a96f")
-	)
-	(wire
-		(pts
-			(xy 107.95 81.28) (xy 114.3 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4af8f284-9750-4c00-8d05-f508de3b6547")
-	)
-	(wire
-		(pts
-			(xy 219.71 86.36) (xy 226.06 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ffdefe7-4e85-48dc-87bb-9b01cb3bd5bd")
-	)
-	(wire
-		(pts
-			(xy 269.24 88.9) (xy 261.62 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51c77592-50b2-4c84-b1b6-977699fedc52")
-	)
-	(wire
-		(pts
-			(xy 267.97 81.28) (xy 261.62 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57ac4707-f761-4d96-ba8d-12a04f9585f8")
-	)
-	(wire
-		(pts
-			(xy 101.6 93.98) (xy 101.6 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59e92d80-b737-4a99-aa0b-49dbf7c5fd1f")
-	)
-	(wire
-		(pts
-			(xy 271.78 91.44) (xy 261.62 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a6407af-f2d1-440c-9db4-d2f4646f10e3")
-	)
-	(wire
-		(pts
-			(xy 217.17 78.74) (xy 226.06 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7171a30d-713d-41d7-9ac8-9619353496f3")
-	)
-	(wire
-		(pts
-			(xy 96.52 91.44) (xy 86.36 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7926c739-8610-4712-8d82-a8ca69137272")
-	)
-	(wire
-		(pts
-			(xy 163.83 83.82) (xy 170.18 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a77b320-200b-4e1c-adea-d50291259c7d")
-	)
-	(wire
-		(pts
-			(xy 212.09 86.36) (xy 205.74 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "810407e5-ee82-4b03-8da2-0ec0b8aecf3c")
-	)
-	(wire
-		(pts
-			(xy 267.97 86.36) (xy 261.62 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8142b440-53d0-4c4d-b062-070411ab563f")
-	)
-	(wire
-		(pts
-			(xy 44.45 83.82) (xy 50.8 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8841ccb8-cc1a-4242-97b2-90aa5c80c0c7")
-	)
-	(wire
-		(pts
-			(xy 92.71 86.36) (xy 86.36 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89225c26-9e72-49ab-99a8-633097269469")
-	)
-	(wire
-		(pts
-			(xy 219.71 81.28) (xy 226.06 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cef3adc-806e-4e52-871f-747fbd337379")
-	)
-	(wire
-		(pts
-			(xy 326.39 86.36) (xy 318.77 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90e44080-27b6-41e2-b347-5169d19022fd")
-	)
-	(wire
-		(pts
-			(xy 212.09 81.28) (xy 205.74 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "966127fa-8d00-4393-8d2d-64d4c7e87a4c")
-	)
-	(wire
-		(pts
-			(xy 156.21 81.28) (xy 149.86 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "984d452b-a710-43a5-aed1-7224c48eca49")
-	)
-	(wire
-		(pts
-			(xy 213.36 83.82) (xy 205.74 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1147d1c-cca4-4e56-9c44-247bbbbf48fd")
-	)
-	(wire
-		(pts
-			(xy 328.93 91.44) (xy 318.77 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3915807-19eb-496c-89c1-0b5b5d3fb523")
-	)
-	(wire
-		(pts
-			(xy 217.17 93.98) (xy 217.17 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8326c47-b648-4620-9e14-d40bf4f196c6")
-	)
-	(wire
-		(pts
-			(xy 278.13 88.9) (xy 283.21 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afe12b47-25d3-4be2-bf22-ae98b559ea14")
-	)
-	(wire
-		(pts
-			(xy 44.45 88.9) (xy 50.8 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b50e67fe-f13d-4903-8861-1ceccb0620e9")
-	)
-	(wire
-		(pts
-			(xy 156.21 88.9) (xy 149.86 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7a0fc37-ca17-4076-bbb9-199feb4d7d19")
-	)
-	(wire
-		(pts
-			(xy 93.98 88.9) (xy 86.36 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba6f689b-dc85-4a74-a82b-91ae0ae1170b")
-	)
-	(wire
-		(pts
-			(xy 213.36 88.9) (xy 205.74 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bac97aa6-94b5-4469-b004-84e219d839de")
-	)
-	(wire
-		(pts
-			(xy 93.98 83.82) (xy 86.36 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baf74d23-2031-41d1-9811-6febbcfc4b7f")
-	)
-	(wire
-		(pts
-			(xy 149.86 93.98) (xy 161.29 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb01f9b0-59bb-46e2-8304-5523a58f19a1")
-	)
-	(wire
-		(pts
-			(xy 24.13 78.74) (xy 50.8 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc0668e9-1448-483a-bbd2-883201067bb1")
-	)
-	(wire
-		(pts
-			(xy 327.66 78.74) (xy 318.77 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bde3fbe2-10e5-4245-b690-57275e2f35da")
-	)
-	(wire
-		(pts
-			(xy 269.24 83.82) (xy 261.62 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf8e83ad-e962-4e34-9112-835cc1871f4d")
-	)
-	(wire
-		(pts
-			(xy 325.12 81.28) (xy 318.77 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c04c3ecc-7d90-40b4-83e1-4816fa17654f")
-	)
-	(wire
-		(pts
-			(xy 157.48 83.82) (xy 149.86 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c153c856-ef30-4dbf-9b50-efcc359ba932")
-	)
-	(wire
-		(pts
-			(xy 95.25 78.74) (xy 86.36 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1ae33ed-c7bd-405c-87a1-f12bf22c8f58")
-	)
-	(wire
-		(pts
-			(xy 278.13 83.82) (xy 283.21 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c63e5240-d6f5-46ad-ad26-61e85e1df91c")
-	)
-	(wire
-		(pts
-			(xy 276.86 86.36) (xy 283.21 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c83bf9a2-b30e-4b9b-b82c-f08f43f89c97")
-	)
-	(wire
-		(pts
-			(xy 261.62 93.98) (xy 274.32 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc60915f-1590-4a66-bec9-76c1eb9eb66d")
-	)
-	(wire
-		(pts
-			(xy 219.71 88.9) (xy 226.06 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0989ed6-57b9-4970-ae20-0001d981e929")
-	)
-	(wire
-		(pts
-			(xy 161.29 78.74) (xy 170.18 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7d331ac-8649-4fff-9f88-8a60fab6997c")
-	)
-	(wire
-		(pts
-			(xy 107.95 86.36) (xy 114.3 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e93aa324-05df-40cd-88e2-487c6b90d76e")
-	)
-	(wire
-		(pts
-			(xy 165.1 88.9) (xy 170.18 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea7b71bf-c30b-405f-99e8-e00bb67dee35")
-	)
-	(wire
-		(pts
-			(xy 160.02 91.44) (xy 149.86 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecbdc47c-25d1-4406-aff3-34ce763e9319")
-	)
-	(wire
-		(pts
-			(xy 274.32 78.74) (xy 283.21 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed51d9c2-cd26-43b6-8e86-8a72a235e916")
-	)
-	(wire
-		(pts
-			(xy 163.83 86.36) (xy 170.18 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed812870-ebc9-4ca9-a768-863429ccc5ff")
-	)
-	(wire
-		(pts
-			(xy 44.45 81.28) (xy 50.8 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f753e900-b313-4f89-8d73-a664c056c47f")
-	)
-	(wire
-		(pts
-			(xy 107.95 83.82) (xy 114.3 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9dfb9c5-12bd-4144-9221-f536b80d90e3")
-	)
-	(wire
-		(pts
-			(xy 276.86 81.28) (xy 283.21 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb5bce9a-e88f-481f-9d04-bc3ad4601899")
-	)
-	(wire
-		(pts
-			(xy 86.36 93.98) (xy 101.6 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcb09bd3-8482-49b1-a625-4973dbf163b8")
-	)
-	(label "green14"
-		(at 269.24 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0349a094-61c6-4f22-9f96-226892602bd2")
-	)
-	(label "SPI_CLK"
-		(at 214.63 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "038ff9f6-1eb3-4c14-8cd2-7ed86ef78b2b")
-	)
-	(label "green12"
-		(at 240.03 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0cbbce1a-3ed0-4bc5-95f9-8b24d121f72b")
-	)
-	(label "green17"
-		(at 276.86 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0eb8caed-b5fe-4de2-8433-4de8c81e7441")
-	)
-	(label "SPI_CLK"
-		(at 158.75 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1110cab8-7a6f-4d52-a0ff-171ea5f98bfa")
-	)
-	(label "SPI_CLK"
-		(at 270.51 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "139736f8-682e-4c07-8cca-0692531f53f8")
-	)
-	(label "red17"
-		(at 321.31 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "18183933-ac2e-4eb8-83fd-896fe4d7660a")
-	)
-	(label "green7"
-		(at 157.48 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "21e1a135-f8a5-4f2b-8210-b2693e406881")
-	)
-	(label "red3"
-		(at 104.14 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "258cdabc-6678-493a-a908-49efd86dcc4b")
-	)
-	(label "red17"
-		(at 278.13 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27745ff0-b36a-426a-b78e-4c6d60b8fdff")
-	)
-	(label "red4"
-		(at 107.95 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "28790a18-65d8-448a-a5eb-bf7102488669")
-	)
-	(label "red5"
-		(at 135.89 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "29a67bbd-4d62-4883-a826-759e8e6b347f")
-	)
-	(label "SPI_CLK"
-		(at 95.25 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3021dfc6-0cbd-4a58-9814-713a91267c66")
-	)
-	(label "red7"
-		(at 166.37 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "315fde5a-f9e8-4843-9875-d439337f65f7")
-	)
-	(label "green1"
-		(at 69.85 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3a5324aa-c99b-4472-b1b2-7dd1ea055df8")
-	)
-	(label "red9"
-		(at 198.12 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4095afa2-9572-4eb7-953a-63392c0a7610")
-	)
-	(label "green4"
-		(at 107.95 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "41228cd0-d8d8-4316-8793-ca8c19d52c09")
-	)
-	(label "green10"
-		(at 213.36 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "41df1a68-87f3-466f-8e25-5f93f9ee192f")
-	)
-	(label "green12"
-		(at 219.71 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43285f4c-c027-455a-adca-f7a4339e8b52")
-	)
-	(label "green8"
-		(at 163.83 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43cb1c99-dba0-43eb-884f-6e2e81b5210c")
-	)
-	(label "green7"
-		(at 162.56 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "463771f7-a0f1-4c21-a579-eec69c7c844c")
-	)
-	(label "red11"
-		(at 228.6 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4684e284-6d5c-43e3-b773-f4e4a5e427aa")
-	)
-	(label "red8"
-		(at 163.83 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4728b584-035e-4dc3-adc9-c96e9a60eef9")
-	)
-	(label "green2"
-		(at 85.09 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4b1430d6-e5b3-4846-a303-b04d1a739e05")
-	)
-	(label "red18"
-		(at 326.39 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4cd011bc-6155-43cd-a308-0bece917bd89")
-	)
-	(label "green15"
-		(at 287.02 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4e4c29d5-9560-42f8-bf15-d9bb4646fb99")
-	)
-	(label "green6"
-		(at 156.21 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "50240eac-5e9f-4c25-bb27-e0bcea2094b2")
-	)
-	(label "green3"
-		(at 93.98 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5428d984-fc90-40f8-8593-be25c428cafe")
-	)
-	(label "red4"
-		(at 120.65 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "55776ba8-40da-401d-86a0-48e1925d395a")
-	)
-	(label "red0"
-		(at 58.42 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5832d151-2ae3-4be9-a942-247791a7ab2e")
-	)
-	(label "red2"
-		(at 88.9 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "589be6f3-41e6-4b57-8c61-9081597a4e21")
-	)
-	(label "green3"
-		(at 100.33 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "59703d63-30ce-4e7e-bffd-212fc1406438")
-	)
-	(label "red8"
-		(at 182.88 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5aede71b-0b5b-45eb-8a21-58f1616637df")
-	)
-	(label "red11"
-		(at 212.09 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5f7962af-9941-4173-ad5e-751be3f9c2d2")
-	)
-	(label "green13"
-		(at 255.27 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "653601fb-094b-467a-8e33-aea00c36318e")
-	)
-	(label "LATCH_pin"
-		(at 271.78 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6713e02b-8b7d-40f0-8915-7b32d54778a1")
-	)
-	(label "red6"
-		(at 156.21 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6735cb70-685f-4df5-822a-34d82d46b929")
-	)
-	(label "LATCH_pin"
-		(at 160.02 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6a510207-4137-4ad6-9582-0b599b50b0a7")
-	)
-	(label "green14"
-		(at 271.78 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b4c788d-bd69-46e9-acd7-37ab992ad98b")
-	)
-	(label "green5"
-		(at 132.08 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7707bbd2-10b1-41c7-87c0-5007431da988")
-	)
-	(label "green10"
-		(at 209.55 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "793abbe6-f921-4995-b9d8-5caa45b179c7")
-	)
-	(label "red13"
-		(at 259.08 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7d121a39-6fee-4a85-9314-54b6fa7c21f9")
-	)
-	(label "green6"
-		(at 147.32 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7d9af1de-f497-4a8c-85f6-cdceac47610f")
-	)
-	(label "SPI_CLK"
-		(at 35.56 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7d9bafbe-81da-44c9-bdc5-006f07f4bd75")
-	)
-	(label "red19"
-		(at 325.12 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8abd71be-6d5b-4d96-b1c3-34ccdf382c0a")
-	)
-	(label "red13"
-		(at 219.71 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8adc2c12-caa9-48e1-a7d2-892e1c367433")
-	)
-	(label "SPI_CLK"
-		(at 327.66 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8d15fb38-8e04-436b-9f38-1ab55a649bae")
-	)
-	(label "green5"
-		(at 107.95 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d819438-1e61-4569-9b45-84f520c2a3a8")
-	)
-	(label "green18"
-		(at 326.39 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8dd9febb-fcb5-43ee-bb53-1dffc0e7b48c")
-	)
-	(label "green9"
-		(at 163.83 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8ed8bee6-e604-48ae-9895-aafee54c4786")
-	)
-	(label "red15"
-		(at 290.83 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "91c0b16e-2eeb-48db-b49d-a91fe26e64fa")
-	)
-	(label "red5"
-		(at 107.95 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "970e7556-def0-413f-ac7f-81128e9db9f4")
-	)
-	(label "red19"
-		(at 353.06 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "996c4b71-f728-4172-895b-74d96186d234")
-	)
-	(label "red14"
-		(at 275.59 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "999f47ec-2a62-4f8f-8827-43dcdb3b67ec")
-	)
-	(label "red16"
-		(at 278.13 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9a581b21-753e-41f0-bd19-564d5c83c702")
-	)
-	(label "green11"
-		(at 224.79 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9b7f738a-b5c1-4c94-b95d-ca9da54e1f1d")
-	)
-	(label "red3"
-		(at 93.98 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9fe130c8-7034-4a0e-bd21-e2cb5fe01ff5")
-	)
-	(label "red1"
-		(at 44.45 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a1d0e292-10e0-43dc-ba0e-ac8cea944a28")
-	)
-	(label "green19"
-		(at 349.25 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a35c2a50-e61d-4037-b96b-4c4ca9c83690")
-	)
-	(label "green18"
-		(at 334.01 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a6caeccf-7b52-491e-abc0-d367657a99a1")
-	)
-	(label "red14"
-		(at 267.97 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aae61494-a827-4a9a-92ef-ba4982df55fe")
-	)
-	(label "red12"
-		(at 219.71 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ad9d7fec-141e-4ca9-a0ba-ff2316ebc4fb")
-	)
-	(label "green0"
-		(at 44.45 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "af02047f-6b39-43a5-b81e-bd03e683fedc")
-	)
-	(label "LATCH_pin"
-		(at 96.52 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b196f693-b2a5-4173-aa3e-d1fe42469025")
-	)
-	(label "red7"
-		(at 156.21 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3b321a0-e064-48ce-9a5f-c82688d1d770")
-	)
-	(label "green8"
-		(at 179.07 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3ef23c6-7e87-4bdb-a0c1-c45b27f91b53")
-	)
-	(label "red2"
-		(at 92.71 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b41b66be-b295-478b-a70c-cf5a6b3947ae")
-	)
-	(label "LATCH_pin"
-		(at 328.93 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ba585d40-86cd-45e7-8f4d-070db4e59cf6")
-	)
-	(label "red9"
-		(at 165.1 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd9d39af-eba4-49df-aa73-b43046337b46")
-	)
-	(label "LATCH_pin"
-		(at 35.56 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bfb0d329-8c63-4e2c-97c0-67dee9385735")
-	)
-	(label "green19"
-		(at 326.39 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c2539b1b-609a-4d26-aec4-d45c59cfe581")
-	)
-	(label "red10"
-		(at 213.36 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c31c55a5-e38e-4226-880b-3b36e7725b9c")
-	)
-	(label "red1"
-		(at 73.66 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cb044e95-f1c7-4fb0-a3cf-3dd0e86f4047")
-	)
-	(label "red10"
-		(at 212.09 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d1ebb260-a398-4a13-8f5a-1a2cde4e6e33")
-	)
-	(label "LATCH_pin"
-		(at 215.9 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dc9cc801-b866-4fd6-b6ad-8100a147a833")
-	)
-	(label "green9"
-		(at 194.31 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e39c91f9-47e4-4d90-8e5c-0ed9c9cd70b4")
-	)
-	(label "red6"
-		(at 151.13 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e9515ca9-1e7c-4b94-9414-29d4b2687416")
-	)
-	(label "green15"
-		(at 269.24 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ea3acfb9-859a-4a1f-93a7-d0c75524ba02")
-	)
-	(label "red18"
-		(at 337.82 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eafef536-3fca-47a2-a516-82aabddeeeef")
-	)
-	(label "green16"
-		(at 302.26 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eb0bc4ab-10a1-4921-b8bd-f9abef6c78f4")
-	)
-	(label "red12"
-		(at 243.84 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eb23eac7-1a16-4340-b9c5-b3f6d57a6777")
-	)
-	(label "red15"
-		(at 267.97 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eb99b882-4872-489d-9222-2f51b4bfeb60")
-	)
-	(label "green13"
-		(at 219.71 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ebb82c65-f6ea-4ce0-aaf1-3e1f52af6269")
-	)
-	(label "red16"
-		(at 306.07 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eceda2a6-8cfb-4451-8197-b357f434c785")
-	)
-	(label "green0"
-		(at 54.61 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ed115aa0-5025-40ea-a990-be977964b1d5")
-	)
-	(label "green11"
-		(at 213.36 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eeb70469-dcd5-4de4-bbb7-24c3655f6801")
-	)
-	(label "red0"
-		(at 44.45 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f05fb4e1-d851-4d10-912f-8fbb0da0e354")
-	)
-	(label "green1"
-		(at 44.45 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f21046aa-5fe5-41cd-8d71-cc0e390e5e87")
-	)
-	(label "green4"
-		(at 116.84 31.75 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f25639d8-0e59-424b-b6d5-3aed65b26ac3")
-	)
-	(label "green16"
-		(at 276.86 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f834c8fe-b620-4ffd-abd2-d1d91d2b39f7")
-	)
-	(label "green17"
-		(at 317.5 31.75 270)
-		(fields_autoplaced yes)
+	(text "LED19"
+		(exclude_from_sim no)
+		(at 362.204 88.138 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 3.81 3.81)
 			)
-			(justify right bottom)
 		)
-		(uuid "f9252ecb-3eb2-4d7f-a746-9a255f2a13ec")
+		(uuid "67717400-6393-4348-b6c5-edab19514b8e")
 	)
-	(label "green2"
-		(at 93.98 88.9 180)
-		(fields_autoplaced yes)
+	(text "LED0"
+		(exclude_from_sim no)
+		(at 72.136 88.392 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 3.81 3.81)
 			)
-			(justify right bottom)
 		)
-		(uuid "fe2f2257-e887-4a3b-9145-d8b50026ce00")
+		(uuid "7a853b1b-32e3-4721-9510-4770e2a94d6f")
 	)
-	(hierarchical_label "MOSI"
+	(hierarchical_label "WS2812B_IN"
 		(shape input)
-		(at 24.13 78.74 180)
+		(at 60.96 148.59 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2559,666 +757,20 @@
 			)
 			(justify right)
 		)
-		(uuid "2c495f8b-2d64-4f6a-878b-deaa73213204")
-	)
-	(hierarchical_label "Clock_spi"
-		(shape input)
-		(at 24.13 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a27dd7dd-bce3-492f-a4e4-3c762e818b13")
-	)
-	(hierarchical_label "LATCH"
-		(shape input)
-		(at 24.13 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2028574-3188-4d13-82cc-dcdb80394831")
-	)
-	(symbol
-		(lib_id "local_library:STPIC6D595TTR")
-		(at 50.8 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0178e2ec-934c-4595-b070-ff38e861e767")
-		(property "Reference" "IC1"
-			(at 68.58 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPIC6D595TTR"
-			(at 68.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library_local:SOP65P640X120-16N"
-			(at 82.55 171.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-			(at 82.55 271.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Counter Shift Registers Power logic 8-BIT"
-			(at 50.8 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.2"
-			(at 82.55 471.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "511-STPIC6D595TTR"
-			(at 82.55 571.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-			(at 82.55 671.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 82.55 771.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-			(at 82.55 871.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "b58c5419-c554-4d0e-b3af-154004171629")
-		)
-		(pin "4"
-			(uuid "5b71645f-90ae-4a34-9942-57cd3085a2e3")
-		)
-		(pin "15"
-			(uuid "80d578b0-d469-4a85-870e-6bb9f5f00ded")
-		)
-		(pin "9"
-			(uuid "6115194e-6933-4954-85ee-e56169c6f034")
-		)
-		(pin "6"
-			(uuid "f618bc69-90b9-4802-8a22-0d8cfaa99280")
-		)
-		(pin "14"
-			(uuid "c5ef027b-5cff-4495-99eb-4d9ef7cb9725")
-		)
-		(pin "11"
-			(uuid "21340284-3e3c-4b36-98b0-3adf3ac21e25")
-		)
-		(pin "1"
-			(uuid "a46fd76c-cd12-45df-85b1-7bc65d3c4239")
-		)
-		(pin "12"
-			(uuid "5f6a9e55-a384-4311-9213-b6a94f56967d")
-		)
-		(pin "2"
-			(uuid "8e659e4c-3e6f-42f3-ad77-290b5bea893d")
-		)
-		(pin "7"
-			(uuid "a34c33a2-13ec-4f06-929c-d205eeea5990")
-		)
-		(pin "16"
-			(uuid "55a974af-ba4a-4e19-a4c5-37e1c680a23d")
-		)
-		(pin "3"
-			(uuid "3877dfb2-6ded-4804-9388-4b5249aa9a39")
-		)
-		(pin "8"
-			(uuid "5f090cf6-872c-464e-a21a-7534bb1d77e8")
-		)
-		(pin "13"
-			(uuid "66b5fcd1-828b-4bfc-a79d-0dca97462290")
-		)
-		(pin "10"
-			(uuid "6a891cb7-7dc3-4746-b3a7-d6783c19985b")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 132.08 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08b2c934-e207-4e05-ae00-2d9735f81429")
-		(property "Reference" "C18"
-			(at 132.0736 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 132.0736 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 132.08 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b07b8559-4641-4401-9742-df48197c8706")
-		)
-		(pin "2"
-			(uuid "adcd593b-dca6-48ec-9cff-3a94193ddcb8")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 187.96 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08ba6e1d-5863-4ce7-b21c-64f589c6b6fd")
-		(property "Reference" "C19"
-			(at 187.9536 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 187.9536 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 187.96 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 187.96 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29eff157-79ce-403e-9437-b4e62df20735")
-		)
-		(pin "2"
-			(uuid "dc0b568c-4b1a-4d4c-a9eb-82c495e01de7")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "local_library:STPIC6D595TTR")
-		(at 114.3 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15594de6-96d9-4866-a5f1-2f93ab52555b")
-		(property "Reference" "IC2"
-			(at 132.08 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPIC6D595TTR"
-			(at 132.08 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library_local:SOP65P640X120-16N"
-			(at 146.05 171.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-			(at 146.05 271.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Counter Shift Registers Power logic 8-BIT"
-			(at 114.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.2"
-			(at 146.05 471.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "511-STPIC6D595TTR"
-			(at 146.05 571.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-			(at 146.05 671.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 146.05 771.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-			(at 146.05 871.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "1d94c909-cc90-4957-b246-6aab130bd3c2")
-		)
-		(pin "4"
-			(uuid "16c47490-c98b-43d2-aaaa-5dafb7ee31d4")
-		)
-		(pin "15"
-			(uuid "4c3f030f-27c6-41ae-88b5-f028f790debc")
-		)
-		(pin "9"
-			(uuid "a37cafa5-1fc2-48b4-94d4-a56b832ee830")
-		)
-		(pin "6"
-			(uuid "86defdca-05e1-4aae-bea6-bc44bc601403")
-		)
-		(pin "14"
-			(uuid "6afdcfb9-f14c-404d-9d8f-ef35a897dc5a")
-		)
-		(pin "11"
-			(uuid "5e96c6fb-c491-4743-b6db-6260c9f4ced6")
-		)
-		(pin "1"
-			(uuid "00f748f0-47c6-408c-88e5-ba30eed815c6")
-		)
-		(pin "12"
-			(uuid "2366a1ee-b75a-4130-8fa2-7c6d539f3a88")
-		)
-		(pin "2"
-			(uuid "a24ca1aa-99e0-4218-9450-2955b91fbb21")
-		)
-		(pin "7"
-			(uuid "3142731f-3be9-4881-8b6b-20d8f3f56c4a")
-		)
-		(pin "16"
-			(uuid "a3ef51a9-49d5-454f-bc72-73b9ea869651")
-		)
-		(pin "3"
-			(uuid "f8b2889b-b7b7-44c1-8eae-15721a567648")
-		)
-		(pin "8"
-			(uuid "836c50eb-f652-496e-8e5d-3d3c63ca4af5")
-		)
-		(pin "13"
-			(uuid "fb498623-35bd-4d5b-acb7-0cf4aca54951")
-		)
-		(pin "10"
-			(uuid "07e76a1a-49c8-42e6-878f-5329e2d2b510")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "local_library:STPIC6D595TTR")
-		(at 283.21 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16330467-ebe3-4546-a3a6-7e037abcb989")
-		(property "Reference" "IC5"
-			(at 300.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPIC6D595TTR"
-			(at 300.99 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library_local:SOP65P640X120-16N"
-			(at 314.96 171.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-			(at 314.96 271.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Counter Shift Registers Power logic 8-BIT"
-			(at 283.21 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.2"
-			(at 314.96 471.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "511-STPIC6D595TTR"
-			(at 314.96 571.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-			(at 314.96 671.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 314.96 771.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-			(at 314.96 871.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "8f14ceea-ab67-4bd4-b903-cbec26863a5a")
-		)
-		(pin "4"
-			(uuid "ce8bd1bf-3ab2-4581-93d3-15a7a6facfdf")
-		)
-		(pin "15"
-			(uuid "18d28926-4eb6-45fc-bd06-058a94456cfb")
-		)
-		(pin "9"
-			(uuid "74defaf1-63e4-422d-a33c-6ba4bd926d8a")
-		)
-		(pin "6"
-			(uuid "059ca5b0-c9e3-4321-8502-c4ec159fd5e2")
-		)
-		(pin "14"
-			(uuid "6059ffe5-460e-43dd-a961-41712d1c31db")
-		)
-		(pin "11"
-			(uuid "f6742b90-5b90-4ec9-a711-b182863230cb")
-		)
-		(pin "1"
-			(uuid "36691d9d-520e-4b8b-b1bf-0554acc0019e")
-		)
-		(pin "12"
-			(uuid "dd0e39e6-21e8-4a17-95d8-daaf334c4d7a")
-		)
-		(pin "2"
-			(uuid "531a1c1d-fb52-4e72-b6f6-634008a66a28")
-		)
-		(pin "7"
-			(uuid "85c3d929-78db-4db8-bb86-5bf8b7f832a8")
-		)
-		(pin "16"
-			(uuid "a4648f82-3cef-49d3-8570-710948ed74c9")
-		)
-		(pin "3"
-			(uuid "678cc562-4a01-4263-861b-48ea9dadcb49")
-		)
-		(pin "8"
-			(uuid "f506153f-9d26-468f-808d-277767a61dc1")
-		)
-		(pin "13"
-			(uuid "2e489fcb-e470-4990-909f-37f83489da8d")
-		)
-		(pin "10"
-			(uuid "ae04da93-8454-4f4c-b254-231bb77f5fc9")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "IC5")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "93aea758-e17e-4122-a28e-f67b7394f30a")
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 170.18 91.44 90)
+		(at 285.75 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "290192a8-6749-414a-b8c9-029f8dbf4682")
-		(property "Reference" "#PWR027"
-			(at 173.99 91.44 0)
+		(uuid "009f76af-bc68-4201-9c6a-b984211acf14")
+		(property "Reference" "#PWR077"
+			(at 285.75 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,16 +779,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 166.37 91.4399 90)
+			(at 285.75 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 91.44 0)
+			(at 285.75 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +796,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 91.44 0)
+			(at 285.75 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,7 +805,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 91.44 0)
+			(at 285.75 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3263,12 +814,296 @@
 			)
 		)
 		(pin "1"
-			(uuid "2af18b69-0515-4e1f-a0b0-860749091283")
+			(uuid "0a7ca446-da4f-4727-829e-8ff97ff7a8a3")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR027")
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 133.35 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03d8ddf3-94f9-41d4-a0d7-85ae9a3b1097")
+		(property "Reference" "D7"
+			(at 129.54 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 144.78 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 134.62 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 135.89 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 133.35 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "2dd0ec99-2d25-4248-a2fa-281587eb8c14")
+		)
+		(pin "3"
+			(uuid "a6edee1b-9ad6-4ff3-860e-1bcb3d4300c7")
+		)
+		(pin "1"
+			(uuid "7971d50d-f1fe-4c5b-a453-20ac1b8574b0")
+		)
+		(pin "2"
+			(uuid "197124f3-943b-4b88-b3cf-f9d92ea20441")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 255.27 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0462fa93-928a-4a8d-9139-cfe48ff19734")
+		(property "Reference" "#PWR073"
+			(at 255.27 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 255.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 255.27 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8040318b-bb72-4b70-88c1-08563d9f4a0d")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 270.51 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0665ed03-f539-4d69-a2d7-035cae960a90")
+		(property "Reference" "#PWR075"
+			(at 270.51 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 270.51 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 270.51 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f859b96-2767-4f72-989e-c1c3be907d8b")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 179.07 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0db65d82-8ca2-4d47-97f2-aaa4db5a3486")
+		(property "Reference" "D10"
+			(at 175.26 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 190.5 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 180.34 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 181.61 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 179.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d839e13c-af6f-4341-bc43-2cb46e458e0d")
+		)
+		(pin "3"
+			(uuid "3b18341d-9f41-48fd-ac78-a0aa3f79955f")
+		)
+		(pin "1"
+			(uuid "98e349b6-1c42-4963-b082-218aff85962d")
+		)
+		(pin "2"
+			(uuid "298cf721-1cdd-4782-9c42-7e008f717abe")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3276,16 +1111,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 63.5 90)
+		(at 270.51 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2f215f5b-6c96-480a-a25f-58fe21b0ada5")
-		(property "Reference" "#PWR0103"
-			(at 196.85 63.5 0)
+		(uuid "10240c40-0aee-4f09-8877-597a88ddb233")
+		(property "Reference" "#PWR076"
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,16 +1129,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 63.4999 90)
+			(at 270.51 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 63.5 0)
+			(at 270.51 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,7 +1146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 63.5 0)
+			(at 270.51 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3321,7 +1155,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 63.5 0)
+			(at 270.51 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,12 +1164,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a5ea09a7-4f3a-4a06-bcc5-689aa9e94d86")
+			(uuid "e3729413-5dcf-4173-ab55-ae5406d1e5a4")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0103")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -3343,16 +1177,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 185.42 63.5 90)
+		(at 102.87 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "360d8373-ff71-4a6a-9bb4-e5c6a2b60933")
-		(property "Reference" "#PWR0100"
-			(at 189.23 63.5 0)
+		(uuid "15c590ba-2b80-4e90-81b0-69b8046c4271")
+		(property "Reference" "#PWR012"
+			(at 102.87 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3361,16 +1195,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 181.61 63.4999 90)
+			(at 102.87 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 63.5 0)
+			(at 102.87 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,7 +1212,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 63.5 0)
+			(at 102.87 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,7 +1221,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 185.42 63.5 0)
+			(at 102.87 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,12 +1230,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca80c6ef-6df0-4fe9-b44b-d56b791d8e6c")
+			(uuid "035e11e2-b362-4cb8-8799-522b71ea1045")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0100")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3410,16 +1243,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 93.98 270)
+		(at 300.99 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3cd0c330-b2c4-4631-ba9f-d8d2c550da50")
-		(property "Reference" "#PWR022"
-			(at 107.95 93.98 0)
+		(uuid "15d83b61-4c25-4f41-b2ec-25c07b05b087")
+		(property "Reference" "#PWR080"
+			(at 300.99 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,16 +1261,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 93.9799 90)
+			(at 300.99 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 93.98 0)
+			(at 300.99 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +1278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 93.98 0)
+			(at 300.99 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3455,7 +1287,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 93.98 0)
+			(at 300.99 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3464,12 +1296,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e20f5f3a-ef23-46f9-b099-f85a898e8f71")
+			(uuid "60e43e68-e6ef-434f-b9bb-87bd937a13a7")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR022")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -3477,16 +1309,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 283.21 76.2 90)
+		(at 224.79 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "429d32c0-eef5-494c-a39a-6bc6e237ffde")
-		(property "Reference" "#PWR083"
-			(at 287.02 76.2 0)
+		(uuid "162d8833-1f05-4bfa-aaef-248f0d65f75b")
+		(property "Reference" "#PWR069"
+			(at 224.79 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3495,16 +1327,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 279.4 76.1999 90)
+			(at 224.79 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 283.21 76.2 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3513,7 +1344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 283.21 76.2 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,7 +1353,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 283.21 76.2 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,29 +1362,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f110844-709d-4007-a339-ed0662bd3acd")
+			(uuid "02f4eea0-6e2e-48f1-ae2b-3661002ce483")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR083")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 114.3 91.44 90)
+		(lib_id "power:GND")
+		(at 148.59 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4c236d10-204e-4520-94ed-051f052ef359")
+		(uuid "166dc32d-9bce-4161-9dfc-cc4980da0179")
 		(property "Reference" "#PWR019"
-			(at 118.11 91.44 0)
+			(at 148.59 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3561,17 +1392,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 110.49 91.4399 90)
+		(property "Value" "GND"
+			(at 148.59 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 91.44 0)
+			(at 148.59 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,7 +1410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 91.44 0)
+			(at 148.59 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3588,8 +1418,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 114.3 91.44 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3598,7 +1428,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "793fb49e-c64a-4ebd-bcb8-09562b0933e2")
+			(uuid "b6a74e30-81fa-4792-96bf-ed08f24c9aae")
 		)
 		(instances
 			(project "rpm_meter"
@@ -3610,17 +1440,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 170.18 93.98 270)
+		(lib_id "LED:WS2812B")
+		(at 240.03 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f99e194-5de6-40cd-84d1-0458eae0aaa7")
-		(property "Reference" "#PWR071"
-			(at 163.83 93.98 0)
+		(uuid "173caf86-9434-4efb-895f-7c5eaa3c5c21")
+		(property "Reference" "D14"
+			(at 236.22 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 251.46 104.1714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,17 +1465,28 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 166.37 93.9799 90)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 241.3 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 170.18 93.98 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 242.57 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 240.03 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,31 +1494,22 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 170.18 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "ee253175-9966-4fd8-86b4-7f76bbe4e255")
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "28104022-2722-4f26-9781-3f0f8e191a0b")
 		)
 		(pin "1"
-			(uuid "3b62e12c-3c56-4793-9005-4c8ccf042cbc")
+			(uuid "19e56dfd-00f4-44a6-88fc-e5efa3156cf9")
+		)
+		(pin "2"
+			(uuid "bcb3b778-30bd-43e8-ada1-09a866847829")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR071")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -3678,16 +1517,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 129.54 63.5 90)
+		(at 194.31 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5501c6a7-b8a3-4669-84a3-89d33f10197e")
-		(property "Reference" "#PWR096"
-			(at 133.35 63.5 0)
+		(uuid "18258dd3-2835-4f7d-b70e-699513798e44")
+		(property "Reference" "#PWR024"
+			(at 194.31 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3696,16 +1535,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 125.73 63.4999 90)
+			(at 194.31 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 63.5 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,7 +1552,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 63.5 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3723,7 +1561,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 129.54 63.5 0)
+			(at 194.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3732,12 +1570,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "870960a9-9024-4ec9-b0d7-b58764d7e48b")
+			(uuid "ea0e99ac-6eba-4f40-ab8b-07ccb23aab48")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR096")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3745,16 +1583,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 64.77 90)
+		(at 285.75 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "56a3178a-cd41-4208-88af-e354b7ff3954")
-		(property "Reference" "#PWR095"
-			(at 77.47 64.77 0)
+		(uuid "21dba580-cb16-48e9-ba63-647b01eaa538")
+		(property "Reference" "#PWR078"
+			(at 285.75 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,16 +1601,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 64.7699 90)
+			(at 285.75 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 64.77 0)
+			(at 285.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3781,7 +1618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 64.77 0)
+			(at 285.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +1627,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 64.77 0)
+			(at 285.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,79 +1636,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "db1a670c-0b8f-412a-bdf2-6019260393a3")
+			(uuid "e5d112fb-00f8-4103-9940-316090cfaac1")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 283.21 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60bcc974-319b-4474-83ad-01e1109ca07f")
-		(property "Reference" "#PWR084"
-			(at 287.02 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 279.4 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 283.21 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 283.21 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 283.21 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "668f208e-a9d4-4199-97dc-056f474911b4")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR084")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -3879,16 +1649,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 303.53 63.5 90)
+		(at 224.79 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "618b375e-295f-49df-98a8-2c9a5dfea5d5")
-		(property "Reference" "#PWR0111"
-			(at 309.88 63.5 0)
+		(uuid "27211f15-8d49-4fe5-92c4-a977177367c6")
+		(property "Reference" "#PWR070"
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3897,16 +1667,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 307.34 63.4999 90)
+			(at 224.79 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 303.53 63.5 0)
+			(at 224.79 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3915,7 +1684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 303.53 63.5 0)
+			(at 224.79 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,7 +1693,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 63.5 0)
+			(at 224.79 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3933,12 +1702,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a15c4567-3ff9-45b3-a639-127c07a4de74")
+			(uuid "a5230685-64aa-43d4-9cb7-0afc8146be0d")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0111")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -3946,16 +1715,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 63.5 90)
+		(at 316.23 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "63181082-4b09-4a9e-a802-1d2de75d99b7")
-		(property "Reference" "#PWR0107"
-			(at 252.73 63.5 0)
+		(uuid "2ea406b9-9d05-4547-9250-b140e328f038")
+		(property "Reference" "#PWR082"
+			(at 316.23 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,16 +1733,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 250.19 63.4999 90)
+			(at 316.23 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 63.5 0)
+			(at 316.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3982,7 +1750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 63.5 0)
+			(at 316.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3991,7 +1759,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 63.5 0)
+			(at 316.23 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4000,150 +1768,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "36f24ff5-b7a1-435d-b518-9e75aa7df8d2")
+			(uuid "a0c8f634-bdcb-44cf-a268-6ce8f82340f3")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 68.58 64.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65e5f893-1221-43df-8146-95d4582a3aa3")
-		(property "Reference" "C17"
-			(at 68.5736 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 68.5736 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed4c0dfc-7185-4f42-b20f-de84bf609f1d")
-		)
-		(pin "2"
-			(uuid "d7bfb233-37d1-4d35-9358-916457d186e4")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 318.77 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68269594-374d-48dd-9ad6-7808bdad60c6")
-		(property "Reference" "R8"
-			(at 321.31 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 321.31 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 316.992 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 318.77 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 318.77 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b4eadcd-f70d-43a8-b6bf-a5f9a81558cf")
-		)
-		(pin "2"
-			(uuid "0f8eef04-dec3-459b-869d-1f2e79abfb2a")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "R8")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -4151,16 +1781,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 76.2 90)
+		(at 72.39 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "69b7429c-c806-44b7-a8d3-a309024c8e33")
-		(property "Reference" "#PWR014"
-			(at 92.71 76.2 0)
+		(uuid "37488ec9-3709-4349-8e17-4a8365b97e06")
+		(property "Reference" "#PWR08"
+			(at 72.39 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4169,16 +1799,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 76.1999 90)
+			(at 72.39 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 76.2 0)
+			(at 72.39 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,7 +1816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 76.2 0)
+			(at 72.39 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +1825,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 76.2 0)
+			(at 72.39 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4205,79 +1834,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b07d6291-ffa2-4b4a-9919-e88ee7fcdf7a")
+			(uuid "9645921c-9a0b-4c2c-8171-c93686261689")
 		)
 		(instances
 			(project ""
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 241.3 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e1f23d0-4d66-4ae8-9935-a6a24c2ee763")
-		(property "Reference" "#PWR0104"
-			(at 245.11 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 237.49 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 241.3 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7c813ec-e40f-45a8-958b-268346e7806f")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0104")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4285,16 +1847,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 283.21 93.98 270)
+		(at 346.71 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7329e504-ad6d-41d0-8824-810579c5b582")
-		(property "Reference" "#PWR087"
-			(at 276.86 93.98 0)
+		(uuid "39ec9ffa-2441-4814-b89c-70ecd76d060a")
+		(property "Reference" "#PWR086"
+			(at 346.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4303,16 +1865,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 279.4 93.9799 90)
+			(at 346.71 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 283.21 93.98 0)
+			(at 346.71 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4321,7 +1882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 283.21 93.98 0)
+			(at 346.71 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4330,7 +1891,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 283.21 93.98 0)
+			(at 346.71 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +1900,565 @@
 			)
 		)
 		(pin "1"
-			(uuid "12f574ca-b615-4fa9-b787-c12bf0ebda3b")
+			(uuid "db2ad572-77cd-437a-9b1b-899e2ca065d9")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 300.99 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ad56c8e-5d76-431e-a654-afe6507f3151")
+		(property "Reference" "D18"
+			(at 297.18 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 312.42 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 302.26 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 303.53 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 300.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "11cadef7-4b90-4315-8fea-5ff2051a8077")
+		)
+		(pin "3"
+			(uuid "59b37ec1-50dd-4b8f-98bb-ec89975f339a")
+		)
+		(pin "1"
+			(uuid "cb99520d-cec8-4ca3-87fe-bc399bfd14e6")
+		)
+		(pin "2"
+			(uuid "7b80cb42-574b-4d80-a837-ae0c302d8499")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 179.07 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "403fbb0a-b460-4103-b42b-e2e30540e0a0")
+		(property "Reference" "#PWR022"
+			(at 179.07 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 179.07 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d1a144c-83ff-4051-ab28-a14bffc50c92")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45163ec5-965b-4f5f-8917-e95b90feb210")
+		(property "Reference" "#PWR074"
+			(at 255.27 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3648bfab-326a-4f8b-a15a-c19db95ec300")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 270.51 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "494456e4-17b4-4312-bbf6-18ea575e88ec")
+		(property "Reference" "D16"
+			(at 266.7 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 281.94 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 271.78 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 273.05 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 270.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5d7ab0ad-d735-4ec3-a54d-e203e833b0ac")
+		)
+		(pin "3"
+			(uuid "d368c9d9-9c81-4d6a-9d7c-7a35246c3dca")
+		)
+		(pin "1"
+			(uuid "8cdd90f5-f675-4a0d-9f97-9ccc11786052")
+		)
+		(pin "2"
+			(uuid "7c1ddfc6-05d3-4938-b3fe-41a343cf1334")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 163.83 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4dae8d5f-4495-4f28-bca0-7d4f6cc30305")
+		(property "Reference" "D9"
+			(at 160.02 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 175.26 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 165.1 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 166.37 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "652cf3fb-a716-4616-a75f-fc79a3728d54")
+		)
+		(pin "3"
+			(uuid "335754e2-3612-44b3-ac46-9b469caa5982")
+		)
+		(pin "1"
+			(uuid "a3f0b7ca-6e8f-4b98-8d64-8711eb688762")
+		)
+		(pin "2"
+			(uuid "1792e8e2-7b15-4a72-93fc-16f2c195e714")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50383a72-c67a-4ba4-9e45-e3b518a8647e")
+		(property "Reference" "#PWR013"
+			(at 102.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58b38c8b-8fc4-420f-ae4a-686a570f870a")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 346.71 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "541bf40c-36c8-4fa0-9497-a82faf382ca2")
+		(property "Reference" "#PWR085"
+			(at 346.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 346.71 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 346.71 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89bebb45-d1cd-40f7-b5b8-621fa385e6f2")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 361.95 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54a93c17-f467-4669-953d-891c4c26cb86")
+		(property "Reference" "#PWR087"
+			(at 361.95 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 361.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 361.95 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5210c4e-d66c-4479-be6b-74281178abbf")
 		)
 		(instances
 			(project "rpm_meter"
@@ -4351,17 +2470,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 318.77 76.2 90)
+		(lib_id "LED:WS2812B")
+		(at 194.31 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78f3689d-b73a-49ae-bf2c-0bd1f36dcf69")
-		(property "Reference" "#PWR088"
-			(at 325.12 76.2 0)
+		(uuid "592b74b4-33a9-484f-9818-09888ae508dd")
+		(property "Reference" "D11"
+			(at 190.5 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 205.74 104.1714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4369,17 +2495,85 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 322.58 76.1999 90)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 195.58 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 196.85 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 194.31 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4516df11-26d7-42da-84d2-e27b649fa759")
+		)
+		(pin "3"
+			(uuid "a4afd09f-46a1-4eb2-ad93-d8cd6338f4e2")
+		)
+		(pin "1"
+			(uuid "70d8ac39-1435-4b29-b9d8-ee2703842260")
+		)
+		(pin "2"
+			(uuid "5e3145a9-404a-45ae-b2bd-273b3ec896de")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 72.39 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b6594d7-e610-404c-b6e3-6d0f4944edbe")
+		(property "Reference" "#PWR09"
+			(at 72.39 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Footprint" ""
-			(at 318.77 76.2 0)
+			(at 72.39 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +2582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 318.77 76.2 0)
+			(at 72.39 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4396,8 +2590,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 318.77 76.2 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 72.39 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4406,7 +2600,73 @@
 			)
 		)
 		(pin "1"
-			(uuid "85a4dc78-a3cd-4db7-a564-872c51c9333c")
+			(uuid "998480c0-3347-4c4e-8a35-d39a2a6f3a5f")
+		)
+		(instances
+			(project ""
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 361.95 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dd20640-882a-4755-8625-3b94fe465528")
+		(property "Reference" "#PWR088"
+			(at 361.95 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 361.95 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 361.95 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38741c43-01c0-4575-8f88-6e5cdacce172")
 		)
 		(instances
 			(project "rpm_meter"
@@ -4419,16 +2679,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 50.8 76.2 90)
+		(at 118.11 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "79ba1f79-547e-49ec-9273-9c5b8b8dbaa6")
-		(property "Reference" "#PWR010"
-			(at 54.61 76.2 0)
+		(uuid "5f870001-c3dc-40a9-9045-bc570fa0aac8")
+		(property "Reference" "#PWR014"
+			(at 118.11 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4437,16 +2697,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 46.99 76.1999 90)
+			(at 118.11 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 76.2 0)
+			(at 118.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +2714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 76.2 0)
+			(at 118.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4464,7 +2723,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 50.8 76.2 0)
+			(at 118.11 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4473,79 +2732,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "59a3121d-50f0-43c0-a770-3dddc51fde11")
-		)
-		(instances
-			(project ""
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 226.06 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ed08655-3345-41f1-ac7c-240b58128123")
-		(property "Reference" "#PWR076"
-			(at 229.87 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 222.25 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 226.06 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "973ab9d0-a200-484a-b229-cda0a9298e41")
+			(uuid "196d8759-c4a1-4ada-8560-bc5dbd3a8587")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR076")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4553,16 +2745,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 226.06 93.98 270)
+		(at 209.55 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "886b8aec-27da-4571-82fc-f6e4b50f9b1a")
-		(property "Reference" "#PWR079"
-			(at 219.71 93.98 0)
+		(uuid "60ed01ab-cf06-4c09-8354-be8591ec7436")
+		(property "Reference" "#PWR027"
+			(at 209.55 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,16 +2763,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 93.9799 90)
+			(at 209.55 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 93.98 0)
+			(at 209.55 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,7 +2780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 93.98 0)
+			(at 209.55 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,7 +2789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 226.06 93.98 0)
+			(at 209.55 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,7 +2798,73 @@
 			)
 		)
 		(pin "1"
-			(uuid "f40e2659-39fe-4f78-9987-fd3350d1f14f")
+			(uuid "2c8e9eda-e1d5-44db-ab3a-faa2619ac97b")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 300.99 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6186c01f-438a-4d9e-a3ec-4662e390c721")
+		(property "Reference" "#PWR079"
+			(at 300.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 300.99 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 300.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 300.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdec5aff-0701-4839-883f-28343c5db568")
 		)
 		(instances
 			(project "rpm_meter"
@@ -4620,16 +2877,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 226.06 76.2 90)
+		(at 240.03 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8cc2b9da-0cae-46d2-a670-830c20e28876")
-		(property "Reference" "#PWR075"
-			(at 229.87 76.2 0)
+		(uuid "67e8be0a-a266-4d43-b2af-eb4f7b6f78eb")
+		(property "Reference" "#PWR071"
+			(at 240.03 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,16 +2895,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 222.25 76.1999 90)
+			(at 240.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 76.2 0)
+			(at 240.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4656,7 +2912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 76.2 0)
+			(at 240.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,7 +2921,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 226.06 76.2 0)
+			(at 240.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,12 +2930,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7860c6a3-66e8-42be-b962-1faef7ab1f99")
+			(uuid "3ae53fa7-2695-4378-a8ab-7eca710ab851")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR075")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -4687,16 +2943,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 93.98 270)
+		(at 240.03 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "93ededbd-72ea-4be7-8f25-4b2f6712a8be")
-		(property "Reference" "#PWR015"
-			(at 44.45 93.98 0)
+		(uuid "6ba8960d-15a4-44a0-817a-0b347cb2c32a")
+		(property "Reference" "#PWR072"
+			(at 240.03 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,16 +2961,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 93.9799 90)
+			(at 240.03 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 93.98 0)
+			(at 240.03 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,7 +2978,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 93.98 0)
+			(at 240.03 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +2987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 93.98 0)
+			(at 240.03 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,12 +2996,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "253274e2-9bed-4704-9767-1904e32f5f33")
+			(uuid "b357561f-0362-4db4-95e8-1c78c14690fd")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR015")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -4754,16 +3009,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 318.77 101.6 0)
+		(at 133.35 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "95059f32-d848-46d5-bbc8-d3c4d5ea84c9")
-		(property "Reference" "#PWR091"
-			(at 318.77 107.95 0)
+		(uuid "6c20b324-b884-47ee-8e6e-ec1dd285d003")
+		(property "Reference" "#PWR017"
+			(at 133.35 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,7 +3027,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 318.77 106.68 0)
+			(at 133.35 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +3035,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 318.77 101.6 0)
+			(at 133.35 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,7 +3044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 318.77 101.6 0)
+			(at 133.35 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4798,7 +3053,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 318.77 101.6 0)
+			(at 133.35 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,45 +3062,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "9c8c6323-b06a-44ae-8c5a-a2f550293a2c")
+			(uuid "9c56b07f-c866-4fb4-a0e8-872732255ddc")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR091")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 243.84 63.5 270)
+		(lib_id "power:GND")
+		(at 331.47 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "98288a2b-5c42-43c0-b3c7-65ad58516453")
-		(property "Reference" "C20"
-			(at 243.8336 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 243.8336 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 243.84 63.5 0)
+		(uuid "74741b1f-5df5-41ba-8fbb-c9035395810b")
+		(property "Reference" "#PWR084"
+			(at 331.47 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4853,8 +3092,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 243.84 63.5 0)
+		(property "Value" "GND"
+			(at 331.47 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4862,8 +3109,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 243.84 63.5 0)
+		(property "Datasheet" ""
+			(at 331.47 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 331.47 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4872,15 +3128,154 @@
 			)
 		)
 		(pin "1"
-			(uuid "07e19c90-9111-4aef-b41d-894a57877fcc")
+			(uuid "4e9394df-b1ef-405d-b5c4-1899a1983068")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 163.83 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89c1e4a1-2362-4903-b01f-189d239dd32c")
+		(property "Reference" "#PWR020"
+			(at 163.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 163.83 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20c8e40c-d220-4431-bb65-2f350e4a3ea7")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 361.95 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89f3ee3f-108e-46cd-a094-7be6fbaf8cbd")
+		(property "Reference" "D22"
+			(at 358.14 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 373.38 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 363.22 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 364.49 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 361.95 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5a238a2d-4acc-4c92-a149-a9ea055b1d20")
+		)
+		(pin "3"
+			(uuid "6193b622-4bd4-42f1-b692-26ec39055a34")
+		)
+		(pin "1"
+			(uuid "2aba8c62-86a2-41f6-a60d-b2bf97922130")
 		)
 		(pin "2"
-			(uuid "1921dd06-b392-4a5c-bde9-671afabb1dae")
+			(uuid "9ce9ad24-cf53-46aa-8f34-f349c943226d")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "C20")
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -4888,83 +3283,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 50.8 91.44 90)
+		(at 148.59 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a06e2d30-a26b-41ec-bffc-1facfd4d585c")
-		(property "Reference" "#PWR011"
-			(at 54.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 46.99 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 50.8 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2831db2a-77b1-4655-868f-a17725b06f8f")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 114.3 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3661efa-4b8e-4fae-b2ea-99220b5eb623")
+		(uuid "9695549e-471c-4d14-99c0-634533eb0c5b")
 		(property "Reference" "#PWR018"
-			(at 118.11 76.2 0)
+			(at 148.59 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,16 +3301,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 110.49 76.1999 90)
+			(at 148.59 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 76.2 0)
+			(at 148.59 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +3318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 76.2 0)
+			(at 148.59 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +3327,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 114.3 76.2 0)
+			(at 148.59 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +3336,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4dc57591-fc2c-4dc8-a4fb-0f748a93fa79")
+			(uuid "c39e9fda-94b8-4cf5-9715-2f6d9fe40106")
 		)
 		(instances
 			(project "rpm_meter"
@@ -5022,16 +3349,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 66.04 64.77 90)
+		(at 87.63 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bbcd8e74-3379-4dff-8153-213b3b0ce7c9")
-		(property "Reference" "#PWR092"
-			(at 69.85 64.77 0)
+		(uuid "a2aaba10-e20e-4c0f-a80b-2d379ec9f378")
+		(property "Reference" "#PWR010"
+			(at 87.63 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,16 +3367,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 62.23 64.7699 90)
+			(at 87.63 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 64.77 0)
+			(at 87.63 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +3384,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 64.77 0)
+			(at 87.63 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +3393,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 66.04 64.77 0)
+			(at 87.63 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,45 +3402,36 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a69ebb2-a54c-4027-9a10-5328ae428c4a")
+			(uuid "f9a7c96e-b732-4e6c-986a-05b7b007ccd3")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR092")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 300.99 63.5 270)
+		(lib_id "LED:WS2812B")
+		(at 87.63 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc9cce33-eb1c-47f5-bee4-e1a9de200399")
-		(property "Reference" "C21"
-			(at 300.9836 57.15 90)
+		(uuid "a440ba87-0d3a-4d16-8f98-8a8b65211dab")
+		(property "Reference" "D4"
+			(at 83.82 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 300.9836 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 300.99 63.5 0)
+		(property "Value" "WS2812B"
+			(at 99.06 104.1714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5122,67 +3439,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 300.99 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 300.99 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fb00c6a5-bfec-497c-9bd0-4c579ca5b52d")
-		)
-		(pin "2"
-			(uuid "41f3741b-6b7f-417c-854d-2bf5fe1479c5")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "local_library:STPIC6D595TTR")
-		(at 170.18 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be8d95d9-ac00-42ca-84c1-73358f876d0c")
-		(property "Reference" "IC3"
-			(at 187.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPIC6D595TTR"
-			(at 187.96 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library_local:SOP65P640X120-16N"
-			(at 201.93 171.12 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 88.9 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5191,8 +3449,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-			(at 201.93 271.12 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 90.17 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5201,279 +3459,31 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Counter Shift Registers Power logic 8-BIT"
-			(at 170.18 76.2 0)
+		(property "Description" "RGB LED with integrated controller"
+			(at 87.63 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Height" "1.2"
-			(at 201.93 471.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "511-STPIC6D595TTR"
-			(at 201.93 571.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-			(at 201.93 671.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 201.93 771.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-			(at 201.93 871.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "d66f766c-b633-4e67-9bd2-7939a6be5a2f")
 		)
 		(pin "4"
-			(uuid "80676fa4-a074-41db-a19f-ddeec769e970")
-		)
-		(pin "15"
-			(uuid "1ceb25aa-57ba-4e44-8112-168b1f3ae24e")
-		)
-		(pin "9"
-			(uuid "897cb11f-baeb-4fba-989b-d364279e9efc")
-		)
-		(pin "6"
-			(uuid "abfb0c82-5551-4fa3-ab6d-11b6d289fe22")
-		)
-		(pin "14"
-			(uuid "2dd93d69-2835-4bc4-a252-32961e01ad2d")
-		)
-		(pin "11"
-			(uuid "debb3f99-2c7a-4ae6-980e-3373f8e79314")
-		)
-		(pin "1"
-			(uuid "64c2d44c-0f31-42b8-b9ba-221134a2c377")
-		)
-		(pin "12"
-			(uuid "d1284deb-b03d-46a8-9bb9-ac53fc86f72b")
-		)
-		(pin "2"
-			(uuid "16dec4b6-0cc3-4c58-bf39-e35d84a59c04")
-		)
-		(pin "7"
-			(uuid "154f133e-cda9-4cff-b8a6-5dff5733cafa")
-		)
-		(pin "16"
-			(uuid "3b7ca1ee-0e59-4a6b-b0d0-de69910356c4")
+			(uuid "bff4e788-a9b3-4fae-a37c-485fa9f350eb")
 		)
 		(pin "3"
-			(uuid "6bed039e-5ebe-4958-87d3-bfabefed06fe")
+			(uuid "601046ad-08b6-4da0-9f39-1bc065ef8adf")
 		)
-		(pin "8"
-			(uuid "73cfef94-b868-4aef-b263-8b53ee0a5cb9")
+		(pin "1"
+			(uuid "e3d23726-4abe-46c2-ae16-10f4aaf435dd")
 		)
-		(pin "13"
-			(uuid "4a587179-7103-4e48-9726-7fd23deb9f93")
-		)
-		(pin "10"
-			(uuid "8d0e5826-b191-4616-907b-bcdf1471a1c0")
+		(pin "2"
+			(uuid "6c08b022-d3ed-4e4d-ad7a-27e543a4d4b7")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "IC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "local_library:STPIC6D595TTR")
-		(at 226.06 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf2e5f0e-cf63-4b9e-8c61-b7c656ccccc5")
-		(property "Reference" "IC4"
-			(at 243.84 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STPIC6D595TTR"
-			(at 243.84 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library_local:SOP65P640X120-16N"
-			(at 257.81 171.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/STPIC6D595TTR.pdf"
-			(at 257.81 271.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Counter Shift Registers Power logic 8-BIT"
-			(at 226.06 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.2"
-			(at 257.81 471.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "511-STPIC6D595TTR"
-			(at 257.81 571.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STPIC6D595TTR"
-			(at 257.81 671.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 257.81 771.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STPIC6D595TTR"
-			(at 257.81 871.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "eaeb441a-17b2-43b2-a85a-20f4eb371728")
-		)
-		(pin "4"
-			(uuid "ed58b10d-b6b1-4408-9b54-6a4ab96e2347")
-		)
-		(pin "15"
-			(uuid "0890c909-c8b4-417d-a0a6-e8e889a6ecd3")
-		)
-		(pin "9"
-			(uuid "d12d9e52-96da-4325-8ccb-1ff47329dffc")
-		)
-		(pin "6"
-			(uuid "9bbef1fb-fc36-443c-b9ee-9ea32a03097d")
-		)
-		(pin "14"
-			(uuid "a9c80b7c-3d90-4a74-9215-bf029a10cfbf")
-		)
-		(pin "11"
-			(uuid "ff4e27e8-49ac-420e-8b6d-48f19a41782d")
-		)
-		(pin "1"
-			(uuid "1c1d0836-d0d4-4b83-a20a-72cb8f4fc7c7")
-		)
-		(pin "12"
-			(uuid "7f7f97fe-23b9-425c-8a51-35ee94607f2c")
-		)
-		(pin "2"
-			(uuid "e5cfa080-4664-4215-9be4-afe60a2ef5bd")
-		)
-		(pin "7"
-			(uuid "6c6e3412-63b8-48fc-acba-38213a43d10e")
-		)
-		(pin "16"
-			(uuid "8bda61a2-1c06-4c2a-af74-9e6b1457dbca")
-		)
-		(pin "3"
-			(uuid "956f6eb7-01b2-497e-bf22-846efaf624e5")
-		)
-		(pin "8"
-			(uuid "95035c8d-26f7-4ee9-a334-33e245b6918c")
-		)
-		(pin "13"
-			(uuid "93018520-eb6f-4b04-9949-04d5da1bc7d7")
-		)
-		(pin "10"
-			(uuid "1c4d6dca-d18d-497e-9aaa-d13400cf67c9")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "IC4")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5481,16 +3491,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 63.5 90)
+		(at 118.11 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c551b467-be1c-4526-b374-7c88ac7b1749")
-		(property "Reference" "#PWR099"
-			(at 140.97 63.5 0)
+		(uuid "a6204ba3-4c01-40bd-acaf-b2656f0a8525")
+		(property "Reference" "#PWR015"
+			(at 118.11 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5499,16 +3509,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 63.4999 90)
+			(at 118.11 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 63.5 0)
+			(at 118.11 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5517,7 +3526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 63.5 0)
+			(at 118.11 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5526,7 +3535,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 63.5 0)
+			(at 118.11 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5535,12 +3544,283 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff0cd1d8-9a0a-4fa3-b788-a2951d4286db")
+			(uuid "eeacaf39-dea5-459c-9f95-e666004a413a")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR099")
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "local_library:SN74LV1T34DCKR")
+		(at 60.96 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7678a05-34b1-4697-bc8e-830931f73c32")
+		(property "Reference" "IC1"
+			(at 73.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LV1T34DCKR"
+			(at 73.66 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library_local:SOT65P210X110-5N"
+			(at 82.55 240.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74lv1t34"
+			(at 82.55 340.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Power Supply BUFFER Logic Level Shifter (no enable)"
+			(at 60.96 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.1"
+			(at 82.55 540.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "595-SN74LV1T34DCKR"
+			(at 82.55 640.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DCKR?qs=8sOby8ZxZLGjFfifrzzjkQ%3D%3D"
+			(at 82.55 740.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 82.55 840.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SN74LV1T34DCKR"
+			(at 82.55 940.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9fa3dd7-57ea-4589-a857-684c79fa362a")
+		)
+		(pin "5"
+			(uuid "111e3db1-10e9-4cf2-a56d-fd692da55c26")
+		)
+		(pin "2"
+			(uuid "bb4b6db9-4ac0-481b-a290-e419b8b9ad9a")
+		)
+		(pin "4"
+			(uuid "f388a760-0cfb-486a-85ba-3ac144aac57e")
+		)
+		(pin "3"
+			(uuid "fcbba809-2ba3-4cda-97d8-1d6e14726394")
+		)
+		(instances
+			(project ""
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 209.55 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae63378a-cb8c-4d98-8bbd-7907d2c028ae")
+		(property "Reference" "D12"
+			(at 205.74 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 220.98 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 210.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 212.09 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "bb5f3538-a52f-4321-a08b-69a42d312aba")
+		)
+		(pin "3"
+			(uuid "fb9c224e-56ed-479c-9326-9dbb1fb9c952")
+		)
+		(pin "1"
+			(uuid "bcc084a7-1518-4b8c-ac6b-801f082602f2")
+		)
+		(pin "2"
+			(uuid "9e95b6ad-d2b5-4bba-8122-47a2cdb430c8")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 133.35 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0dd3ff4-4d45-410e-86b4-3c983c9842f5")
+		(property "Reference" "#PWR016"
+			(at 133.35 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d315a2dd-efc6-492a-8058-d930a652bb22")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5548,16 +3828,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 76.2 90)
+		(at 163.83 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c710cdf7-a0c8-4d4d-9f82-1436b3813331")
-		(property "Reference" "#PWR080"
-			(at 267.97 76.2 0)
+		(uuid "b1575138-0235-4d68-8abe-a33abee596e4")
+		(property "Reference" "#PWR021"
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5566,16 +3846,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 265.43 76.1999 90)
+			(at 163.83 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 76.2 0)
+			(at 163.83 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5584,7 +3863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 76.2 0)
+			(at 163.83 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5593,7 +3872,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 76.2 0)
+			(at 163.83 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5602,12 +3881,88 @@
 			)
 		)
 		(pin "1"
-			(uuid "c3d6091f-3393-42bc-91b4-2edb093fa814")
+			(uuid "a6aa260d-ab6c-41c2-9b62-8f89ce956821")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR080")
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 316.23 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba5e4d0c-470c-469b-b479-c665f4320c11")
+		(property "Reference" "D19"
+			(at 312.42 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 327.66 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 317.5 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 318.77 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 316.23 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c0a3c4e5-a086-4fb1-9a43-076d149b3ea1")
+		)
+		(pin "3"
+			(uuid "31566c71-efbe-40f6-9f56-bbd41f2b39e4")
+		)
+		(pin "1"
+			(uuid "8de784a3-bd79-4505-9deb-ccad6138a320")
+		)
+		(pin "2"
+			(uuid "8a9a0157-0223-4294-bc9d-2e1e123b6c17")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -5615,16 +3970,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 76.2 90)
+		(at 179.07 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f398538a-c53d-4861-b97d-b99c228b294a")
+		(uuid "be207988-6af2-49ce-a8bf-74a651e25a2f")
 		(property "Reference" "#PWR023"
-			(at 156.21 76.2 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5633,16 +3988,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 76.1999 90)
+			(at 179.07 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 76.2 0)
+			(at 179.07 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5651,7 +4005,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 76.2 0)
+			(at 179.07 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5660,7 +4014,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 76.2 0)
+			(at 179.07 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5669,7 +4023,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "62f70542-fb3d-44cc-87fc-ec3e15dd976a")
+			(uuid "7ab8e01f-4db2-44e0-bea9-a417c46d5de2")
 		)
 		(instances
 			(project "rpm_meter"
@@ -5681,17 +4035,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 298.45 63.5 90)
+		(lib_id "LED:WS2812B")
+		(at 72.39 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fac5b461-aac0-40cf-bf2a-93534a434816")
-		(property "Reference" "#PWR0108"
-			(at 302.26 63.5 0)
+		(uuid "bf622bc2-c006-4b8b-8856-ef9d7a07bb62")
+		(property "Reference" "D3"
+			(at 68.58 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 83.82 104.1714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5699,17 +4060,85 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 294.64 63.4999 90)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 73.66 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 74.93 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 72.39 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c1355964-e793-464c-9052-b34e37093202")
+		)
+		(pin "3"
+			(uuid "4e6337a8-8c67-43c7-90e7-4eb604218ac8")
+		)
+		(pin "1"
+			(uuid "91f9702c-4e46-48c8-b7de-bd5932e2d06a")
+		)
+		(pin "2"
+			(uuid "8f0b6ec9-3a77-4855-b256-1c695192625c")
+		)
+		(instances
+			(project ""
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c279ae4b-b81d-49b1-b400-66fa599dd64a")
+		(property "Reference" "#PWR090"
+			(at 60.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Footprint" ""
-			(at 298.45 63.5 0)
+			(at 60.96 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +4147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 298.45 63.5 0)
+			(at 60.96 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5726,8 +4155,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 298.45 63.5 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,12 +4165,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8f514ee6-ca9a-43cf-93c5-5800abacdd3c")
+			(uuid "407d0c97-8466-4f54-a628-54fd7447cc59")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR0108")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -5749,16 +4178,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 170.18 76.2 90)
+		(at 316.23 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fdf4d4a4-1574-420c-baa8-1d598f35338f")
-		(property "Reference" "#PWR026"
-			(at 173.99 76.2 0)
+		(uuid "c542f660-2287-4cda-bd25-1bc9ebc97cc8")
+		(property "Reference" "#PWR081"
+			(at 316.23 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,16 +4196,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 166.37 76.1999 90)
+			(at 316.23 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 76.2 0)
+			(at 316.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5785,7 +4213,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 76.2 0)
+			(at 316.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,7 +4222,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 76.2 0)
+			(at 316.23 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5803,7 +4231,642 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa62e089-b627-462c-ae98-b95e8b98428e")
+			(uuid "4ad9535b-0c56-43f1-8fca-2c1754e9c986")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 86.36 148.59 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c59c6d1f-5b58-4696-b2dc-29cbb9852653")
+		(property "Reference" "#PWR089"
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 90.17 148.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 86.36 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "813ed6b3-4793-47af-8109-6a76444c841a")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 194.31 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6736b06-1d64-4b77-a0a5-23e60fa7d9a4")
+		(property "Reference" "#PWR025"
+			(at 194.31 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2e1755f-6da2-40a0-92a1-b9d51690b58b")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 331.47 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca621d82-476f-449b-ae4b-e689ee83c674")
+		(property "Reference" "#PWR083"
+			(at 331.47 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 331.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31a78a54-40b7-4662-b79a-373ae6e8480b")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 224.79 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc20ccfe-c308-4ac3-b26c-05a577be4eac")
+		(property "Reference" "D13"
+			(at 220.98 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 236.22 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 227.33 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 224.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4ceee542-1a9d-4244-aee3-311c9baac9a8")
+		)
+		(pin "3"
+			(uuid "8e98fadb-ced2-473a-9a5e-11fb442973aa")
+		)
+		(pin "1"
+			(uuid "24d77378-8daa-44cc-b37b-49364dd4a97a")
+		)
+		(pin "2"
+			(uuid "47eef38d-2b99-4e03-ae33-7c6ae088e31b")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6c27bee-bb06-428b-b235-c4a67a4a346a")
+		(property "Reference" "#PWR011"
+			(at 87.63 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80e3dbfc-5791-4cc6-b3b5-5120b624a543")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 118.11 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e875f878-8ad4-4f96-8806-7810e2b3755a")
+		(property "Reference" "D6"
+			(at 114.3 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 129.54 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 119.38 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 120.65 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 118.11 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "dd0a7ecf-9b91-46a5-b0f2-4399529456a6")
+		)
+		(pin "3"
+			(uuid "2d641a4b-31dc-4d0e-9a9f-d58f140adb60")
+		)
+		(pin "1"
+			(uuid "b6e76195-14cb-4011-b9c6-540cc83a249a")
+		)
+		(pin "2"
+			(uuid "da9a6341-c22c-453b-a201-6d7ef2a36008")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 255.27 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed9ae9d9-828c-4642-ad1e-055d65839615")
+		(property "Reference" "D15"
+			(at 251.46 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 266.7 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 256.54 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 257.81 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 255.27 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d5c6a1f0-df45-4348-8d7f-2c0e744891ad")
+		)
+		(pin "3"
+			(uuid "f2a82628-c015-44c8-89ef-22d7958343ba")
+		)
+		(pin "1"
+			(uuid "7db8d074-7270-45a8-a97c-ae4d48840cf8")
+		)
+		(pin "2"
+			(uuid "1d138e83-a04e-496d-9b21-14509dfae59c")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 331.47 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eda47768-e66a-4d53-af05-c06f042140c4")
+		(property "Reference" "D20"
+			(at 327.66 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 342.9 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 332.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 334.01 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 331.47 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "addf482d-e9dd-4713-b7d1-0c447dc23fee")
+		)
+		(pin "3"
+			(uuid "3e8f698d-4007-40e4-9640-063f347be5fb")
+		)
+		(pin "1"
+			(uuid "567828ec-74e5-4804-9737-c10ac041cc46")
+		)
+		(pin "2"
+			(uuid "3a64ed74-d78c-49d7-817d-e3de04a35615")
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 209.55 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f520c75b-9769-413e-84b3-c7ecf4081d20")
+		(property "Reference" "#PWR026"
+			(at 209.55 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 209.55 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 209.55 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b11c4f9-766c-4264-a129-e380a57e0772")
 		)
 		(instances
 			(project "rpm_meter"
@@ -5815,17 +4878,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 205.74 76.2 90)
+		(lib_id "LED:WS2812B")
+		(at 102.87 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff35934c-e2c5-4345-871f-9da83803e096")
-		(property "Reference" "#PWR072"
-			(at 212.09 76.2 0)
+		(uuid "f53ef898-2601-4926-8599-207ba5a7463d")
+		(property "Reference" "D5"
+			(at 99.06 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 114.3 104.1714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5833,17 +4903,28 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 209.55 76.1999 90)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 104.14 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 205.74 76.2 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 105.41 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 102.87 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5851,59 +4932,55 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 205.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "c9b95660-40df-4ed8-9aa7-79199c85d0a1")
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "71bcda9e-5715-45bb-befd-7f74c50fb47a")
 		)
 		(pin "1"
-			(uuid "95e389f6-db3e-4be2-aedf-02487b4daa41")
+			(uuid "f58aa37a-eb5c-4e3a-a3fb-90641841b590")
+		)
+		(pin "2"
+			(uuid "413a2b5b-772a-4a57-a449-33426bc6250a")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(reference "#PWR072")
+					(reference "D5")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 269.24 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0116f9d9-0975-4e37-90e6-9686a55eb4cd")
-		(property "Sheetname" "led_segment14"
-			(at 268.5284 31.75 90)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 285.75 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6186950-8ac2-472e-a843-b1047850ee7c")
+		(property "Reference" "D17"
+			(at 281.94 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 278.7146 31.75 90)
+		(property "Value" "WS2812B"
+			(at 297.18 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 287.02 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5912,8 +4989,18 @@
 				(hide yes)
 			)
 		)
-		(property "Pole2" ""
-			(at 267.97 6.35 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 288.29 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 285.75 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5921,57 +5008,55 @@
 				(hide yes)
 			)
 		)
-		(pin "Green" input
-			(at 271.78 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7fc240b2-e0f6-4751-8da8-9b1340f900d3")
+		(pin "4"
+			(uuid "3aff7071-b85d-411d-ab32-ecd8eea24b22")
 		)
-		(pin "Red" input
-			(at 275.59 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d01f2279-60ba-4f6f-b23d-faee1d7b75e5")
+		(pin "3"
+			(uuid "d8f8e16f-2dfb-477a-bc86-1387842af1ed")
+		)
+		(pin "1"
+			(uuid "5a21c3c6-6a1a-4b40-b37c-ad194295f362")
+		)
+		(pin "2"
+			(uuid "f168d077-a302-4510-8234-212c75852897")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "22")
+					(reference "D17")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 97.79 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0e135a60-d0b1-4349-b3ea-7e4ba0ab8650")
-		(property "Sheetname" "led_segment3"
-			(at 97.0784 31.75 90)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 346.71 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fab8e657-480b-4a8c-a575-089032032886")
+		(property "Reference" "D21"
+			(at 342.9 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 107.2646 31.75 90)
+		(property "Value" "WS2812B"
+			(at 358.14 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 347.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5980,8 +5065,18 @@
 				(hide yes)
 			)
 		)
-		(property "Pole2" ""
-			(at 113.03 -10.16 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 349.25 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 346.71 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5989,57 +5084,55 @@
 				(hide yes)
 			)
 		)
-		(pin "Green" input
-			(at 100.33 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8a2490d7-7578-4e4d-b5cd-cd7df9b16193")
+		(pin "4"
+			(uuid "b821563d-ab2e-4413-a630-e9faad51f4ef")
 		)
-		(pin "Red" input
-			(at 104.14 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "87fada9b-bf7d-4c67-a888-9ab00f6a8429")
+		(pin "3"
+			(uuid "537ce2e2-4776-44c9-add7-a44a907e67c3")
+		)
+		(pin "1"
+			(uuid "dd5b19f6-886c-4a22-99f1-b75e235cd5ec")
+		)
+		(pin "2"
+			(uuid "6a6eac9d-7446-4da5-ada1-7130bfd96fd1")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "6")
+					(reference "D21")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 129.54 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "10732704-4bee-46f9-9ab6-4352296a40cd")
-		(property "Sheetname" "led_segment5"
-			(at 128.8284 31.75 90)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 148.59 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff920ed9-9af1-49df-9113-3b6a396cf566")
+		(property "Reference" "D8"
+			(at 144.78 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 139.0146 31.75 90)
+		(property "Value" "WS2812B"
+			(at 160.02 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6048,66 +5141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Pole2" ""
-			(at 113.03 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 132.08 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9a5f2f82-97a5-4c0a-9822-1c44e8e4b1f1")
-		)
-		(pin "Red" input
-			(at 135.89 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "04f48f7d-eab3-43f0-a85b-1a0ae5f28f85")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 237.49 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "23a0a27d-2094-499a-b878-185efa7fbf47")
-		(property "Sheetname" "led_segment12"
-			(at 236.7784 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 246.9646 31.75 90)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 151.13 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6116,8 +5151,8 @@
 				(hide yes)
 			)
 		)
-		(property "Pole2" ""
-			(at 267.97 -25.4 0)
+		(property "Description" "RGB LED with integrated controller"
+			(at 148.59 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6125,1118 +5160,23 @@
 				(hide yes)
 			)
 		)
-		(pin "Green" input
-			(at 240.03 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2da60f69-c7f8-4d3e-9813-6550b7750ca9")
+		(pin "4"
+			(uuid "9736311d-afd2-49e7-b635-bbdc427bd4ac")
 		)
-		(pin "Red" input
-			(at 243.84 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "ef7605b7-79ea-4700-b5a4-c187592fe9e0")
+		(pin "3"
+			(uuid "31c02d7a-15ed-4b5d-890f-e04ae0797d2b")
+		)
+		(pin "1"
+			(uuid "d4aa65f6-6fa5-43af-a3fc-a332d46a8afb")
+		)
+		(pin "2"
+			(uuid "9b3612b4-7957-4fd9-84a5-6a5a567da095")
 		)
 		(instances
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "20")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 252.73 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "24d0e9cb-a156-4fab-bddb-6cd9b63503e3")
-		(property "Sheetname" "led_segment13"
-			(at 252.0184 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 262.2046 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 255.27 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2f993787-1c37-45a3-af21-572c389635b5")
-		)
-		(pin "Red" input
-			(at 259.08 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b0720f1b-81aa-4813-ac1f-88a30d180eaf")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "21")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 284.48 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3971fe74-fe98-4687-9500-279b8e726690")
-		(property "Sheetname" "led_segment15"
-			(at 283.7684 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 293.9546 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 287.02 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8b642fcf-73ca-45e8-b11d-3496419263c8")
-		)
-		(pin "Red" input
-			(at 290.83 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b66c7171-90f9-45a7-9f44-681005f2a243")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "23")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 52.07 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3bc46276-496b-44de-b8fa-2ede9a68357b")
-		(property "Sheetname" "led_segment0"
-			(at 51.3584 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 61.5446 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 -55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 54.61 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6c6f8bcf-2930-42ec-8050-6b88860a39ab")
-		)
-		(pin "Red" input
-			(at 58.42 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6931540d-659d-4db8-9747-359057667a5d")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 114.3 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "48760cfd-f5aa-4119-ab14-b81220234cc4")
-		(property "Sheetname" "led_segment4"
-			(at 113.5884 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 123.7746 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 116.84 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9b0bcc28-910a-41f5-8712-34ba7486cad4")
-		)
-		(pin "Red" input
-			(at 120.65 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9b8cac4b-2cff-4267-b492-3bf9835857d6")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 67.31 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "4fee7e7a-8591-4660-872d-5b49e47a87e6")
-		(property "Sheetname" "led_segment1"
-			(at 66.5984 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 76.7846 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 -40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 69.85 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "ed811ccd-9121-4f25-8668-09edcdd2127f")
-		)
-		(pin "Red" input
-			(at 73.66 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "59dcbea4-413a-48bc-958c-a2938f0797c4")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 144.78 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "5c11b842-e333-4cb2-bda5-775b737445fc")
-		(property "Sheetname" "led_segment6"
-			(at 144.0684 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 154.2546 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 147.32 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "30935e0d-964d-4a95-b80c-7fac70dbdb4c")
-		)
-		(pin "Red" input
-			(at 151.13 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e177fdf3-93ba-49cd-a489-78fcd5b27313")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 176.53 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7649156b-ea40-416c-b1e4-f7969fd28b43")
-		(property "Sheetname" "led_segment8"
-			(at 175.8184 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 186.0046 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 179.07 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2ff6e5bb-b174-4e94-aec4-57ad12b5e18e")
-		)
-		(pin "Red" input
-			(at 182.88 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4ba40347-2f0e-4280-849f-c7cca7d30c64")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 222.25 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7a966a3d-a626-455e-9f9a-a0a6962d67ef")
-		(property "Sheetname" "led_segment11"
-			(at 221.5384 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 231.7246 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 -40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 224.79 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e1ef7875-3923-401d-ad20-d42b7b2f94a7")
-		)
-		(pin "Red" input
-			(at 228.6 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f9311365-19ba-4def-86a6-d509fee1e12b")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "19")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 299.72 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "81d8d650-3b36-43a2-a42f-cb111aa8dba3")
-		(property "Sheetname" "led_segment16"
-			(at 299.0084 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 309.1946 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 302.26 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "bfd6c23d-c0c7-4a8b-95cb-4c57ebf72cbe")
-		)
-		(pin "Red" input
-			(at 306.07 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1931054d-7d14-4680-b9e5-ad2570bcd51b")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "24")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 160.02 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "85035ec9-6d2c-4656-b26f-0858b2f3c001")
-		(property "Sheetname" "led_segment7"
-			(at 159.3084 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 169.4946 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 162.56 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "64a841b5-a390-49fa-89ca-8409aee0b36e")
-		)
-		(pin "Red" input
-			(at 166.37 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "452b86f1-b891-47cc-a2f9-8d76d53bbd3a")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 207.01 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "85f254e6-91f1-4f46-abfd-9bd2ee2583c5")
-		(property "Sheetname" "led_segment10"
-			(at 206.2984 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 216.4846 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 -55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 209.55 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fa535136-3f85-460b-b838-090c6c8f8c32")
-		)
-		(pin "Red" input
-			(at 213.36 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "45d99e37-e92c-4d8e-ae0a-f261cf33fa8c")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "17")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 331.47 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "a0a7608c-55c9-455f-a207-32f11ab50629")
-		(property "Sheetname" "led_segment18"
-			(at 330.7584 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 340.9446 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 334.01 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c52607f1-4a36-4bf7-96ad-7f8dc18fa3ee")
-		)
-		(pin "Red" input
-			(at 337.82 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7f1e5953-3bb5-4f1a-a159-868f02aa68d2")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "26")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 346.71 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b5d9c69d-ccb1-4c2c-8233-d93ea3f2b8e5")
-		(property "Sheetname" "led_segment19"
-			(at 345.9984 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 356.1846 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 349.25 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d1609914-dbf5-4d35-897b-eea7800334cf")
-		)
-		(pin "Red" input
-			(at 353.06 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "eca21c24-472a-4c19-967d-6a994be73ac4")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "27")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 191.77 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c4b46dae-b046-48dd-b66a-01048bfc2951")
-		(property "Sheetname" "led_segment9"
-			(at 191.0584 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 201.2446 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 194.31 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "670ee60c-7d39-45d6-8985-b2cfe0214023")
-		)
-		(pin "Red" input
-			(at 198.12 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "31f9913a-64e9-4dbd-94c4-c362b8d38cc4")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 314.96 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "cc8dc8fe-765f-481e-8d04-358f5461075f")
-		(property "Sheetname" "led_segment17"
-			(at 314.2484 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 324.4346 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 267.97 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 317.5 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "23b24450-f41a-42ac-b247-2817f30ded72")
-		)
-		(pin "Red" input
-			(at 321.31 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1bf2dde3-1578-42f6-9ac9-59288b96831a")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "25")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 82.55 19.05)
-		(size 8.89 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ea98e233-9813-4787-9409-aa1856e85a2f")
-		(property "Sheetname" "led_segment2"
-			(at 81.8384 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_segment.kicad_sch"
-			(at 92.0246 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Pole2" ""
-			(at 113.03 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Green" input
-			(at 85.09 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fd99f6e0-0ae9-4c3d-9825-e83ff377ad8b")
-		)
-		(pin "Red" input
-			(at 88.9 31.75 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "bc43aa78-0404-4488-92b2-f627d11994e9")
-		)
-		(instances
-			(project "rpm_meter"
-				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
-					(page "5")
+					(reference "D8")
+					(unit 1)
 				)
 			)
 		)

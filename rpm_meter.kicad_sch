@@ -14,16 +14,6 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 62.23 67.31) (xy 80.01 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02427e69-55f1-4b4d-b5ee-85fc34518275")
-	)
-	(wire
-		(pts
 			(xy 120.65 69.85) (xy 138.43 69.85)
 		)
 		(stroke
@@ -41,26 +31,6 @@
 			(type default)
 		)
 		(uuid "6036d2cd-825e-4569-9b96-c6cf1b107180")
-	)
-	(wire
-		(pts
-			(xy 62.23 62.23) (xy 80.01 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6168cf81-09b0-4c53-9f76-f3d64d55bbb6")
-	)
-	(wire
-		(pts
-			(xy 62.23 64.77) (xy 80.01 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82cca370-eeb9-4aeb-848c-525e5a292132")
 	)
 	(wire
 		(pts
@@ -408,8 +378,8 @@
 		)
 	)
 	(sheet
-		(at 46.99 59.69)
-		(size 15.24 10.16)
+		(at 49.53 62.23)
+		(size 15.24 5.08)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -420,7 +390,7 @@
 		)
 		(uuid "45a986c6-70d0-42c7-9293-21dd4ecec7b9")
 		(property "Sheetname" "Leds"
-			(at 46.99 58.9784 0)
+			(at 49.53 61.5184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -429,7 +399,7 @@
 			)
 		)
 		(property "Sheetfile" "leds.kicad_sch"
-			(at 46.99 70.4346 0)
+			(at 49.53 67.8946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -437,35 +407,15 @@
 				(justify left top)
 			)
 		)
-		(pin "MOSI" input
-			(at 62.23 62.23 0)
+		(pin "WS2812B_IN" input
+			(at 64.77 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a5b9d5dd-8a39-4b1b-a2c2-a3ce71cb51e2")
-		)
-		(pin "Clock_spi" input
-			(at 62.23 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "1c31f236-5145-43f5-be5e-91a890da1fea")
-		)
-		(pin "LATCH" input
-			(at 62.23 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "31355f48-214f-43ec-ab05-4bab7cb9cd39")
+			(uuid "5dcaee6e-42aa-4d5f-815b-00366efe4a6c")
 		)
 		(instances
 			(project "rpm_meter"
