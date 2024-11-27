@@ -2575,6 +2575,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 63.5) (xy 125.73 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ade0eb7-4f80-405f-92d1-d1451b514b79")
+	)
+	(wire
+		(pts
 			(xy 17.78 43.18) (xy 17.78 45.72)
 		)
 		(stroke
@@ -2622,16 +2632,6 @@
 			(type default)
 		)
 		(uuid "3a1afa66-befd-4906-bce2-e7dd398d5821")
-	)
-	(wire
-		(pts
-			(xy 160.02 43.18) (xy 153.67 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d207f4c-ae58-496a-88cc-22e396f77043")
 	)
 	(wire
 		(pts
@@ -2735,13 +2735,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 38.1) (xy 153.67 38.1)
+			(xy 160.02 53.34) (xy 153.67 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "77dbdfd3-9434-4291-95a0-720b45567625")
+		(uuid "6f775638-2a22-427e-86c0-6156894167a5")
 	)
 	(wire
 		(pts
@@ -2835,6 +2835,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 55.88) (xy 153.67 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98116838-317f-43d6-86b3-6501018eb661")
+	)
+	(wire
+		(pts
 			(xy 125.73 34.29) (xy 128.27 34.29)
 		)
 		(stroke
@@ -2852,16 +2862,6 @@
 			(type default)
 		)
 		(uuid "9a7d7ed1-1889-4db7-9fff-eda79b8714da")
-	)
-	(wire
-		(pts
-			(xy 160.02 40.64) (xy 153.67 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c0d8bfb-a275-41a4-87b3-2382fd367159")
 	)
 	(wire
 		(pts
@@ -3053,17 +3053,6 @@
 		)
 		(uuid "f4334e72-68f2-4fad-b4aa-7df5a3bd7715")
 	)
-	(label "enc_a"
-		(at 160.02 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "047204a2-65bb-4581-84f4-6cad300045f1")
-	)
 	(label "eeprom_wp"
 		(at 72.39 43.18 180)
 		(fields_autoplaced yes)
@@ -3074,17 +3063,6 @@
 			(justify right bottom)
 		)
 		(uuid "04fc29bf-f40f-4ef7-aa0c-1e67ab3199b4")
-	)
-	(label "enc_b"
-		(at 160.02 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1ad3aaf6-56ea-491a-84e9-401ed5944771")
 	)
 	(label "scl"
 		(at 157.48 101.6 180)
@@ -3107,6 +3085,17 @@
 			(justify right bottom)
 		)
 		(uuid "239d8673-bed0-4e53-b366-d16333a46adb")
+	)
+	(label "enc_b"
+		(at 160.02 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23c41faa-c7dc-47e5-b540-8ba9f0da5b0c")
 	)
 	(label "sda"
 		(at 72.39 38.1 180)
@@ -3163,6 +3152,17 @@
 		)
 		(uuid "85511c1a-2494-4d57-a7ea-9967584262c4")
 	)
+	(label "enc_p"
+		(at 119.38 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87a6004b-af44-4b22-bbba-6ff563654325")
+	)
 	(label "NRST"
 		(at 120.65 48.26 0)
 		(fields_autoplaced yes)
@@ -3173,6 +3173,17 @@
 			(justify left bottom)
 		)
 		(uuid "aa110a4a-93e5-42fd-9302-412dfa972346")
+	)
+	(label "enc_a"
+		(at 160.02 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4c66047-2eb1-4857-b2f9-a44431975753")
 	)
 	(label "TMS"
 		(at 157.48 71.12 180)
@@ -3185,17 +3196,6 @@
 		)
 		(uuid "b8cc7c70-c362-4a5b-80d1-d6991ebc7488")
 	)
-	(label "enc_p"
-		(at 160.02 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c1523cc1-a84f-483e-980b-acb199ab9135")
-	)
 	(label "TCK"
 		(at 157.48 73.66 180)
 		(fields_autoplaced yes)
@@ -3207,21 +3207,9 @@
 		)
 		(uuid "d46859cd-1fdf-4c34-ae97-896b6f5a2dd4")
 	)
-	(hierarchical_label "r_alert_signal"
-		(shape input)
-		(at 153.67 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a460a71-fb45-4f54-bcfc-e7b2d676014b")
-	)
 	(hierarchical_label "y_alert_signal"
 		(shape input)
-		(at 153.67 50.8 0)
+		(at 153.67 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3229,9 +3217,69 @@
 			)
 			(justify left)
 		)
-		(uuid "3d5d4584-e1ec-4c58-be02-305e9f430d47")
+		(uuid "169ee744-3739-46e0-8754-2a01578856d5")
+	)
+	(hierarchical_label "LATCH_PIN"
+		(shape input)
+		(at 153.67 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1e6957a9-2ce5-4876-b6e5-2472396ebe61")
+	)
+	(hierarchical_label "light_signal"
+		(shape input)
+		(at 153.67 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20a25a67-0c6e-47ff-871d-88dd921941ed")
 	)
 	(hierarchical_label "led_pwm_out_3v3"
+		(shape input)
+		(at 125.73 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "63cbbcdf-dcae-4b56-a141-a05a91ee1f3d")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 153.67 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d369f4f3-82ad-4ae5-8d19-1729ce992cc8")
+	)
+	(hierarchical_label "r_alert_signal"
+		(shape input)
+		(at 153.67 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "efd6f592-8490-4bc8-8c90-d2e86e3190cc")
+	)
+	(hierarchical_label "rpm_signal_mcu"
 		(shape input)
 		(at 153.67 48.26 0)
 		(fields_autoplaced yes)
@@ -3241,31 +3289,19 @@
 			)
 			(justify left)
 		)
-		(uuid "63cbbcdf-dcae-4b56-a141-a05a91ee1f3d")
-	)
-	(hierarchical_label "light_signal"
-		(shape input)
-		(at 153.67 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8fe190e0-dd39-4d39-ab13-4e60e07e2f30")
-	)
-	(hierarchical_label "rpm_signal_mcu"
-		(shape input)
-		(at 153.67 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
 		(uuid "f27c2e93-7d7a-40d5-ba04-dc2d3f66449c")
+	)
+	(hierarchical_label "SPI_SCK"
+		(shape input)
+		(at 153.67 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd2d7d7b-4fc5-4261-9e4d-bca5db8017b4")
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24_Small")
