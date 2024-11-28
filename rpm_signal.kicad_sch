@@ -1676,6 +1676,16 @@
 		)
 		(uuid "ef5ae6e1-a17a-4ef2-8204-8725cc12c638")
 	)
+	(text "dodac zworke"
+		(exclude_from_sim no)
+		(at 181.356 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3704180a-a5f9-4b42-bd70-089da901fe6b")
+	)
 	(text "Sprawdzić obudowę"
 		(exclude_from_sim no)
 		(at 203.708 39.116 0)
