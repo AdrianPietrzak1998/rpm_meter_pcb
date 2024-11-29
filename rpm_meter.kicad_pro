@@ -737,10 +737,6 @@
       "alert_yellow"
     ],
     [
-      "78a0b38c-312f-4578-a70f-0ba40d57e033",
-      "led_pwm_5v"
-    ],
-    [
       "161f8ec5-4d3d-43af-b95a-56d7e596bfdd",
       "mcu"
     ],
