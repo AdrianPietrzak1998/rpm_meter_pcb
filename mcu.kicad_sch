@@ -4414,9 +4414,9 @@
 		(at 246.38 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a3f616ab-b9eb-4cb0-906f-3ecaae2e7ac5")
 		(property "Reference" "J2"
