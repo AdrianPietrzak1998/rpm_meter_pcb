@@ -1328,6 +1328,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 40.64) (xy 80.01 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f351441-9ea8-442e-b15a-f78d5b5a8f2f")
+	)
+	(wire
+		(pts
 			(xy 173.99 101.6) (xy 184.15 101.6)
 		)
 		(stroke
@@ -3364,36 +3374,6 @@
 			)
 			(uuid "2a2ea7c1-2d9b-4317-b4a0-77248ad48993")
 		)
-		(pin "SPI_MOSI" input
-			(at 80.01 62.23 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8e7c3625-a1cc-4854-b356-59d521237a73")
-		)
-		(pin "SPI_SCK" input
-			(at 80.01 64.77 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1c7b7f4c-ff77-4365-96a1-080adf8e4e10")
-		)
-		(pin "LATCH_PIN" input
-			(at 80.01 67.31 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7a82214d-1e74-4fd5-87a3-fa8c87dd454f")
-		)
 		(pin "ENCODER_BTN" input
 			(at 120.65 111.76 0)
 			(effects
@@ -3610,7 +3590,7 @@
 		)
 	)
 	(sheet
-		(at 49.53 62.23)
+		(at 55.88 38.1)
 		(size 15.24 5.08)
 		(fields_autoplaced yes)
 		(stroke
@@ -3622,7 +3602,7 @@
 		)
 		(uuid "45a986c6-70d0-42c7-9293-21dd4ecec7b9")
 		(property "Sheetname" "Leds"
-			(at 49.53 61.5184 0)
+			(at 55.88 37.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3631,16 +3611,17 @@
 			)
 		)
 		(property "Sheetfile" "leds.kicad_sch"
-			(at 49.53 67.8946 0)
+			(at 55.88 43.7646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "WS2812B_IN" input
-			(at 64.77 64.77 0)
+			(at 71.12 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,6 +3672,44 @@
 			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286"
 					(page "29")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 101.6)
+		(size 31.75 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af3bada4-4de8-405e-b49e-8c6e58262e3d")
+		(property "Sheetname" "usb"
+			(at 22.86 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 22.86 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rpm_meter"
+				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286"
+					(page "9")
 				)
 			)
 		)

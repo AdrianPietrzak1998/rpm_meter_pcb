@@ -547,10 +547,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plots/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "_doc_/rpm_meter.step",
       "svg": "",
       "vrml": ""
     },
@@ -735,6 +735,10 @@
     [
       "f7ae4add-1bef-4b23-859a-4f886293d285",
       "alert_yellow"
+    ],
+    [
+      "af3bada4-4de8-405e-b49e-8c6e58262e3d",
+      "usb"
     ],
     [
       "161f8ec5-4d3d-43af-b95a-56d7e596bfdd",
