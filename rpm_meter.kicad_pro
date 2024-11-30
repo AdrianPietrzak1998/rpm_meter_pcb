@@ -680,6 +680,12 @@
           "label": "Opis",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser",
+          "name": "Mouser",
+          "show": false
         }
       ],
       "filter_string": "",
