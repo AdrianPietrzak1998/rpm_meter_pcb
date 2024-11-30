@@ -3370,7 +3370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm"
 			(at 114.3 44.45 0)
 			(effects
 				(font
@@ -3379,7 +3379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.pl/ProductDetail/Bussmann-Eaton/E2X480081G08?qs=%252BXxaIXUDbq3GNbm8O4NmQg%3D%3D"
 			(at 114.3 44.45 0)
 			(effects
 				(font

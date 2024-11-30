@@ -2498,7 +2498,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.tme.eu/pl/details/ec12e20-24p24c-sw/enkodery-inkrementalne/sr-passives/"
 			(at 195.58 116.84 0)
 			(effects
 				(font
