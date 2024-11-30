@@ -2748,6 +2748,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 40.64) (xy 266.7 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88c0f696-4738-4762-b481-710af5fe9e9f")
+	)
+	(wire
+		(pts
 			(xy 133.35 33.02) (xy 133.35 34.29)
 		)
 		(stroke
@@ -2765,6 +2775,16 @@
 			(type default)
 		)
 		(uuid "8b7e6f7f-1b68-4b51-8de4-95b3b4ffec2e")
+	)
+	(wire
+		(pts
+			(xy 260.35 38.1) (xy 266.7 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eaa9712-4f80-4d4e-a1b0-aae4c4159bca")
 	)
 	(wire
 		(pts
@@ -2855,6 +2875,16 @@
 			(type default)
 		)
 		(uuid "b9afaca5-16b5-4996-8ba1-2003b527af5d")
+	)
+	(wire
+		(pts
+			(xy 260.35 35.56) (xy 266.7 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf894a56-93cb-4b05-b8e9-bffd9407092f")
 	)
 	(wire
 		(pts
@@ -3084,6 +3114,17 @@
 		)
 		(uuid "3f4cef0b-4625-4fa2-92e5-0a38375db2e8")
 	)
+	(label "enc_b"
+		(at 260.35 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47b9f74e-22a7-46b4-aa55-f08bad5b2e32")
+	)
 	(label "TMS"
 		(at 236.22 78.74 0)
 		(fields_autoplaced yes)
@@ -3105,6 +3146,17 @@
 			(justify left bottom)
 		)
 		(uuid "87a6004b-af44-4b22-bbba-6ff563654325")
+	)
+	(label "enc_a"
+		(at 260.35 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "953b608d-d5f4-4088-85b3-cfd65ad8c0e5")
 	)
 	(label "NRST"
 		(at 120.65 48.26 0)
@@ -3149,6 +3201,17 @@
 			(justify right bottom)
 		)
 		(uuid "d46859cd-1fdf-4c34-ae97-896b6f5a2dd4")
+	)
+	(label "enc_p"
+		(at 260.35 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f174bb28-9411-48e2-ac56-455208692fde")
 	)
 	(hierarchical_label "y_alert_signal"
 		(shape input)
@@ -3197,6 +3260,42 @@
 			(justify right)
 		)
 		(uuid "63cbbcdf-dcae-4b56-a141-a05a91ee1f3d")
+	)
+	(hierarchical_label "ENCODER_A"
+		(shape input)
+		(at 266.7 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79e97380-2471-4b9b-8c81-3080b1574f0d")
+	)
+	(hierarchical_label "ENCODER_B"
+		(shape input)
+		(at 266.7 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9061f0de-8288-4102-9659-349ebb2bb618")
+	)
+	(hierarchical_label "ENCODER_BTN"
+		(shape input)
+		(at 266.7 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc1c62f7-2150-4e5f-b3f0-b08f467bfc4e")
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
