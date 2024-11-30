@@ -550,7 +550,7 @@
       "plot": "plots/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "_doc_/rpm_meter.step",
+      "step": "_doc_/rpm_meter_usb.step",
       "svg": "",
       "vrml": ""
     },
