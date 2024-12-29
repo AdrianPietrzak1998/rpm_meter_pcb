@@ -3225,18 +3225,6 @@
 		)
 		(uuid "169ee744-3739-46e0-8754-2a01578856d5")
 	)
-	(hierarchical_label "LATCH_PIN"
-		(shape input)
-		(at 153.67 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1e6957a9-2ce5-4876-b6e5-2472396ebe61")
-	)
 	(hierarchical_label "light_signal"
 		(shape input)
 		(at 153.67 43.18 0)
@@ -3297,18 +3285,6 @@
 		)
 		(uuid "cc1c62f7-2150-4e5f-b3f0-b08f467bfc4e")
 	)
-	(hierarchical_label "SPI_MOSI"
-		(shape input)
-		(at 153.67 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d369f4f3-82ad-4ae5-8d19-1729ce992cc8")
-	)
 	(hierarchical_label "r_alert_signal"
 		(shape input)
 		(at 153.67 40.64 0)
@@ -3332,18 +3308,6 @@
 			(justify left)
 		)
 		(uuid "f27c2e93-7d7a-40d5-ba04-dc2d3f66449c")
-	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
-		(at 153.67 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fd2d7d7b-4fc5-4261-9e4d-bca5db8017b4")
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24_Small")

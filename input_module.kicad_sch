@@ -1528,9 +1528,9 @@
 		(at 152.4 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "63f20277-50aa-4fe1-a618-2e4bc9beec04")
 		(property "Reference" "R76"
