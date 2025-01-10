@@ -1452,12 +1452,6 @@
 		)
 	)
 	(junction
-		(at 101.6 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ac84fa0-9ea6-496c-a6a5-5dd6bafbbfbc")
-	)
-	(junction
 		(at 238.76 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1486,6 +1480,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64a1e536-73ab-4d48-b4a8-466c76618024")
+	)
+	(junction
+		(at 135.89 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6639a469-d6b3-4ba3-b02c-2ad79c9caa5b")
 	)
 	(junction
 		(at 138.43 118.11)
@@ -1615,7 +1615,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 64.77) (xy 110.49 64.77)
+			(xy 99.06 64.77) (xy 110.49 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1652,16 +1652,6 @@
 			(type default)
 		)
 		(uuid "6a8925d4-2bec-4d1e-aaf0-a3d18b276b62")
-	)
-	(wire
-		(pts
-			(xy 99.06 64.77) (xy 101.6 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c472bf6-f36a-4091-988b-43015428e673")
 	)
 	(wire
 		(pts
@@ -1792,6 +1782,16 @@
 			(type default)
 		)
 		(uuid "bc007f81-79ce-48e8-b85b-40921302099f")
+	)
+	(wire
+		(pts
+			(xy 135.89 62.23) (xy 135.89 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0975f4b-80fe-41f6-93cb-733803cb4062")
 	)
 	(wire
 		(pts
@@ -3173,7 +3173,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 101.6 64.77 0)
+		(at 135.89 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3181,7 +3181,7 @@
 		(dnp yes)
 		(uuid "6cf8361e-249e-40bf-817e-6cb17753a18c")
 		(property "Reference" "TP3"
-			(at 102.362 63.246 0)
+			(at 136.652 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3190,7 +3190,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 104.14 62.7379 0)
+			(at 138.43 60.1979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3200,7 +3200,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 106.68 64.77 0)
+			(at 140.97 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,7 +3209,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 64.77 0)
+			(at 140.97 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +3218,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 101.6 64.77 0)
+			(at 135.89 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
