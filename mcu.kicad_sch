@@ -3237,7 +3237,7 @@
 		)
 		(uuid "20a25a67-0c6e-47ff-871d-88dd921941ed")
 	)
-	(hierarchical_label "led_pwm_out_3v3"
+	(hierarchical_label "WS2812B_OUT"
 		(shape input)
 		(at 125.73 58.42 180)
 		(fields_autoplaced yes)
@@ -3374,7 +3374,7 @@
 			(uuid "affd0001-250a-4c18-b020-baa80ff3d664")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "Y1")
 					(unit 1)
@@ -3786,7 +3786,7 @@
 			(uuid "90003530-8460-4a50-8756-23e89006caac")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "U2")
 					(unit 1)
@@ -4541,7 +4541,7 @@
 			(uuid "72246c39-67d6-4e04-b823-e7640c832db1")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "J2")
 					(unit 1)
@@ -4901,7 +4901,7 @@
 			(uuid "9ac86116-9635-4288-9a1c-d8d5f927bf8e")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "U1")
 					(unit 1)
@@ -4969,7 +4969,7 @@
 			(uuid "f9e96c25-5fbd-401a-9d7e-2c4367ac5923")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "#PWR038")
 					(unit 1)
@@ -5039,7 +5039,7 @@
 			(uuid "eb78432a-74bf-4a8c-8846-8b47c8e739fd")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "C4")
 					(unit 1)
@@ -5105,7 +5105,7 @@
 			(uuid "51c2d6ac-d79b-47ea-86b1-1a88daeac2f2")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/161f8ec5-4d3d-43af-b95a-56d7e596bfdd"
 					(reference "#PWR040")
 					(unit 1)

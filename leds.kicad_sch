@@ -2983,7 +2983,7 @@
 			(uuid "a36b4222-f2af-421c-8587-931b27bd4222")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
 					(reference "JP1")
 					(unit 1)
@@ -3115,7 +3115,7 @@
 			(uuid "9645921c-9a0b-4c2c-8171-c93686261689")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
 					(reference "#PWR08")
 					(unit 1)
@@ -4289,7 +4289,7 @@
 			(uuid "998480c0-3347-4c4e-8a35-d39a2a6f3a5f")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
 					(reference "#PWR09")
 					(unit 1)
@@ -5930,7 +5930,7 @@
 			(uuid "fcbba809-2ba3-4cda-97d8-1d6e14726394")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
 					(reference "IC1")
 					(unit 1)
@@ -6567,7 +6567,7 @@
 			(uuid "8f0b6ec9-3a77-4855-b256-1c695192625c")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286/45a986c6-70d0-42c7-9293-21dd4ecec7b9"
 					(reference "D3")
 					(unit 1)

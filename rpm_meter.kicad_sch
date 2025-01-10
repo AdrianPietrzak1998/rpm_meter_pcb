@@ -1856,7 +1856,7 @@
 			(uuid "ad0cbb74-3af8-4668-8e33-f1b792028b1b")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286"
 					(reference "J1")
 					(unit 1)
@@ -1923,7 +1923,7 @@
 			(uuid "132c7abf-1234-453c-a5a1-05625d1a6b3a")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286"
 					(reference "#PWR028")
 					(unit 1)
@@ -2545,7 +2545,7 @@
 			(uuid "36b222e8-09c9-47bf-b31a-3fac27437f07")
 		)
 		(instances
-			(project ""
+			(project "rpm_meter"
 				(path "/c95b12ac-441d-4f7a-bd6a-c2e5d81eb286"
 					(reference "SW1")
 					(unit 1)
@@ -3324,16 +3324,6 @@
 				(justify left top)
 			)
 		)
-		(pin "led_pwm_out_3v3" input
-			(at 80.01 64.77 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c0de85d0-641a-4bd1-aa63-757c1ec914d9")
-		)
 		(pin "rpm_signal_mcu" input
 			(at 120.65 43.18 0)
 			(effects
@@ -3403,6 +3393,16 @@
 				(justify right)
 			)
 			(uuid "8782e1bf-9c75-40ef-a3be-e7f3ae97753e")
+		)
+		(pin "WS2812B_OUT" input
+			(at 80.01 64.77 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a47f538f-493e-479a-9b80-b684054ce865")
 		)
 		(instances
 			(project "rpm_meter"
