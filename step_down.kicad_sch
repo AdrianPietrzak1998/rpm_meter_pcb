@@ -3087,7 +3087,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library_local:HPI06306R8"
+		(property "Footprint" "Library_local:VLS6045"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -3096,7 +3096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tme.eu/pl/details/hpi0630-6r8/dlawiki-smd-mocy/ferrocore/"
+		(property "Datasheet" "https://www.tme.eu/pl/details/vls6045ex-6r8m/dlawiki-smd-mocy/tdk/"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -3630,7 +3630,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library_local:HPI04202R2"
+		(property "Footprint" "Library_local:VLCF4020"
 			(at 185.42 58.42 0)
 			(effects
 				(font
@@ -3639,7 +3639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.tme.eu/pl/details/vlcf4020t-2r2n1r7/dlawiki-smd-mocy/tdk/"
 			(at 185.42 58.42 0)
 			(effects
 				(font
